@@ -1,0 +1,55 @@
+.main_container {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.main_container .primary_heading {
+    text-align: center;
+}
+.main_container .line {
+  margin-inline: auto;
+  background-color: #7cdb31;
+  height: 2px;
+  width: 35%;
+  margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 37px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    white-space: nowrap;
+}
+
+table thead tr {
+    height: 40px;
+    background: var(--Cyan-Colour, #008a82);
+}
+
+table thead tr th {
+    color: #fff;
+}
+
+table .case_no {
+    width: 105px;
+}
+
+table tbody tr {
+    height: 30px;
+}
+
+table .submission_categories {
+    width: 478px;
+}
+
+table .name {
+    width: 265px;
+}
