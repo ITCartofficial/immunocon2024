@@ -1,0 +1,92 @@
+.main_container{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.line {
+    background-color: #7cdb31;
+    height: 2px;
+    width: 35%;
+    margin-bottom: 20px;
+    margin-left: 100px;
+  }
+
+.advisory_committe_wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 64px;
+}
+
+.chair_container, .members_container{
+    width: 100%;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    /* outline: 1px solid red; */
+    margin-top: 24px;
+}
+
+.sub_heading {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.3em;
+    padding-bottom: 24px;
+    color: var(--cyan-color);
+    text-decoration: underline;
+}
+
+.photo_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* outline: 1px solid yellow; */
+}
+
+.theme_based_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* outline: 1px solid green; */
+    margin-top: 64px;
+    column-gap: 80px;
+}
+.advisory_committe_wrapper .line_2, .theme_based_container .line_2 {
+    background-color: #7cdb31;
+    height: 2px;
+    width: 30%;
+    margin-bottom: 20px;
+  }
+
+.photo_container_wrapper {
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    /* outline: 1px solid yellow; */
+}
+.primary_container {
+    width: 35%;
+}
+.primary_container h3 {
+    text-align: center;
+}
+.photo_container .primary_container {
+ outline: 1px solid orangered;
+}
+.photo_container_wrapper .card_wrapper {
+    width: 100%;
+    display: flex;
+    gap: 24px;
+}
+
+.container_wrapper {
+    display: flex;
+    gap: 80px;
+    width: 65%;
+}
