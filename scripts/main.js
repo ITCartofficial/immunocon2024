@@ -24,3 +24,25 @@ function loadCardDetails(e) {
     profileImg.style.marginTop = "0px";
   }
 }
+
+
+
+// Color toggle on registration page table
+const sep5Span = document.querySelector('.sep5');
+const sep30Span = document.querySelector('.sep30');
+
+function toggleColors() {
+    if (sep5Span.style.color === 'limegreen') {
+        sep5Span.style.color = 'white';
+        sep5Span.style.textDecoration = 'none'; 
+        sep30Span.style.color = 'white';
+        sep30Span.style.textDecoration = 'none'; 
+    } else {
+        sep5Span.style.color = 'limegreen';
+        sep5Span.style.textDecoration = 'underline'; 
+        sep30Span.style.color = 'limegreen';
+        sep30Span.style.textDecoration = 'underline'; 
+    }
+}
+
+setInterval(toggleColors, 2000);
