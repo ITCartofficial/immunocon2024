@@ -130,6 +130,7 @@ tbody .description {
     font-size: 16px;
     color: #fff;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .download_container .btn_download:hover {
