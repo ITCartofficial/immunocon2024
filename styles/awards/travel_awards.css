@@ -1,0 +1,67 @@
+.main_container {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.main_container .line {
+    background-color: #7cdb31;
+    margin-inline: auto;
+    height: 2px;
+    width: 35%;
+    margin-bottom: 10px;
+}
+
+.page_title, .secondary_heading {
+    text-align: center;
+}
+
+.main_container .para {
+    color: #8F0D0B;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.4em;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding-bottom: 16px;
+}
+
+.guide_line_wrapper {
+    width: 100%;
+    margin-top: 32px;
+}
+
+.guide_line_wrapper h3 {
+    color: var(--dark-color);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.4em;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding-bottom: 67px;
+    text-decoration: underline;
+}
+
+.guide_line_wrapper ul {
+    padding-left: 20px;
+}
+
+.guide_line_wrapper ul li {
+    color: var(--dark-color);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.4em;
+    font-family: 'Poppins', sans-serif;
+}
+
+.guide_line_wrapper .colored_text {
+    color: #8F0D0B;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5em;
+    font-family: 'Poppins', sans-serif;
+}
+
