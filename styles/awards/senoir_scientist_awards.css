@@ -30,23 +30,29 @@
 }
 
 @keyframes hideAndShow {
-    0%, 25% {
-        opacity: 1; 
+
+    0%,
+    25% {
+        opacity: 1;
     }
-    50%, 75% {
-        opacity: 0; 
+
+    50%,
+    75% {
+        opacity: 0;
     }
+
     100% {
-        opacity: 1; 
+        opacity: 1;
     }
 }
 
-.gold_cup_1, .gold_cup_2 {
-    animation: hideAndShow 4s infinite; 
+.gold_cup_1,
+.gold_cup_2 {
+    animation: hideAndShow 4s infinite;
 }
 
-
-.page_title, .secondary_heading {
+.page_title,
+.secondary_heading {
     text-align: center;
 }
 
@@ -61,37 +67,30 @@
     padding-bottom: 16px;
 }
 
-.guide_line_wrapper {
+.content_wrapper {
     width: 100%;
-    margin-top: 32px;
+    height: max-content;
+    display: flex;
+    gap: 130px;
+    margin-top: 88px;
 }
 
-.guide_line_wrapper h3 {
-    color: var(--dark-color);
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 1.4em;
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    padding-bottom: 67px;
-    text-decoration: underline;
+.content_container {
+    width: 80%;
 }
 
-.guide_line_wrapper ul {
-    padding-left: 20px;
+.img_container {
+    width: 20%;
+    height: 328px;
 }
 
-.guide_line_wrapper ul li {
-    color: var(--dark-color);
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.4em;
-    font-family: 'Poppins', sans-serif;
+.img_container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.guide_line_wrapper .colored_text {
+.main_container .colored_text {
     color: #8F0D0B;
     font-size: 16px;
     font-style: normal;
@@ -100,13 +99,45 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* --------- Gradient Note ------- */
+.main_container .para_text {
+    font-weight: 500;
+}
+
+.link_text {
+    color: #02B0E3;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4em;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: underline;
+}
+
+.content_container .btn_application_form {
+    margin-top: 24px;
+    padding: 12px 24px;
+    background: #37ACEC;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 2px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+.btn_application_form:hover {
+    background: linear-gradient(0deg, #02779A, #02779A),
+        linear-gradient(0deg, #02779A, #02779A);
+}
+
+/* --------- Gradient Banner ------- */
 .full_banner_gradient {
     width: 100%;
     height: 47px;
     background: linear-gradient(90deg, #008a82 28.58%, #3a29ab 84.03%);
     margin-bottom: 40px;
-}  
+}
 
 .full_banner_gradient p {
     text-align: center;
@@ -120,18 +151,17 @@
 }
 
 .btn_container {
-    width: 570px;
-    height: 47px;
+    width: 400px;
+    height: 54px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
     margin-bottom: 60px;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
-.btn_nomination {
+.btn_data_sheet {
     padding: 12px 24px;
     background: #fff;
     border: 2px solid #37ACEC;
@@ -141,6 +171,11 @@
     font-size: 18px;
     color: var(--dark-color);
     cursor: pointer;
+}
+
+.btn_data_sheet:hover {
+    background: #37ACEC;
+    color: #fff;
 }
 
 .btn_guidelines {
@@ -157,5 +192,5 @@
 
 .btn_guidelines:hover {
     background: linear-gradient(0deg, #02779A, #02779A),
-    linear-gradient(0deg, #02779A, #02779A);
-} 
+        linear-gradient(0deg, #02779A, #02779A);
+}
