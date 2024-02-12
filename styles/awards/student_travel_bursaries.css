@@ -1,0 +1,186 @@
+.main_container {
+    margin-top: 60px;
+    margin-bottom: 32px;
+}
+
+.main_container .line {
+    background-color: #7cdb31;
+    margin-inline: auto;
+    height: 2px;
+    width: 35%;
+    margin-bottom: 10px;
+}
+
+.title_wrapper {
+    position: relative;
+}
+
+.gold_cup_1 {
+    position: absolute;
+    top: -30%;
+    left: 18%;
+    height: 113px;
+}
+
+.gold_cup_2 {
+    position: absolute;
+    top: -30%;
+    right: 20%;
+    height: 113px;
+}
+
+@keyframes hideAndShow {
+
+    0%,
+    25% {
+        opacity: 1;
+    }
+
+    50%,
+    75% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.gold_cup_1,
+.gold_cup_2 {
+    animation: hideAndShow 4s infinite;
+}
+
+.page_title,
+.secondary_heading {
+    text-align: center;
+}
+
+.main_container .para {
+    color: #8F0D0B;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.4em;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding-bottom: 16px;
+}
+
+.content_wrapper {
+    width: 100%;
+    display: flex;
+    gap: 27px;
+    margin-top: 88px;
+}
+
+.content_wrapper .content_container {
+    width: 70%;
+}
+
+.content_container .para_text_1 {
+    color: var(--dark-color);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5em;
+    font-family: 'Poppins', sans-serif;
+}
+
+.list {
+    padding-left: 18px;
+    padding-top: 15px;
+}
+
+.content_container .list .list_item {
+    color: var(--dark-color);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.4em;
+    font-family: 'Poppins', sans-serif;
+    padding: 2px 0px !important;
+}
+
+.colored_text {
+    color: #8F0D0B;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5em;
+    font-family: 'Poppins', sans-serif;
+}
+
+.para_heading {
+    padding-top: 20px;
+}
+
+.content_wrapper .img_container {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.content_wrapper .img_container .img_card_1, 
+.content_wrapper .img_container .img_card_2 {
+    width: 100%;
+    height: 320px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.content_wrapper .img_container .img_card_1 img, 
+.content_wrapper .img_container .img_card_2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* --------- Gradient Banner ------- */
+.full_banner_gradient {
+    width: 100%;
+    height: 47px;
+    background: linear-gradient(90deg, #008a82 28.58%, #3a29ab 84.03%);
+    margin-bottom: 40px;
+}
+
+.full_banner_gradient p {
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4em;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    padding: 12px 0px;
+}
+
+.link_text {
+    color: #02B0E3;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4em;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: underline;
+}
+
+/* ------------ Red Banner ----- */
+.full_banner {
+    width: 100%;
+    height: 47px;
+    background: #8F0D0B;
+    margin: 25px 0px 64px 0px;
+}
+
+.full_banner p {
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4em;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    padding: 12px 0px;
+}
