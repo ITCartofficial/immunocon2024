@@ -169,6 +169,11 @@ header {
   height: 2px;
   width: 80%;
 }
+
+sup {
+  font-size: 10px;
+}
+
 .header_hero-title p {
   color: #fff;
   text-align: center;
@@ -255,7 +260,7 @@ header {
   content: "";
   position: absolute;
   height: 0px;
-  width: 80%;
+  width: 87%;
   bottom: 0;
   border-bottom: 1px solid #7cdb31;
 }
