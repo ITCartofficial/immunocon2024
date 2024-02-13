@@ -94,6 +94,15 @@
     width: 100%;
 }
 
+.colored_text {
+    color: #8F0D0B;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5em;
+    font-family: 'Poppins', sans-serif;
+}
+
 /* Poster template start */
 .poster_template {
     width: 100%;

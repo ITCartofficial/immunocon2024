@@ -51,7 +51,7 @@ body {
   color: var(--dark-color);
 }
 
-.secondary_heading{
+.secondary_heading {
   font-size: 24px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -99,6 +99,7 @@ body {
   font-family: 'Poppins', sans-serif;
   padding: 0px 0px !important;
 }
+
 .text_bold {
   font-weight: 600;
 }
@@ -117,6 +118,7 @@ header {
   display: flex;
   flex-direction: column;
 }
+
 .header_container {
   width: 100%;
   /* min-height: 180px; */
@@ -127,6 +129,7 @@ header {
   background-size: cover;
   flex-shrink: 0;
 }
+
 .brand_logo {
   all: unset;
   padding-left: 20px;
@@ -140,11 +143,13 @@ header {
   width: 100%;
   min-width: 280px;
 }
+
 .brand_logo-icon {
   width: 80%;
   min-width: 230px;
   height: auto;
 }
+
 .logo_text-container {
   display: flex;
   flex-direction: column;
@@ -157,12 +162,14 @@ header {
   justify-content: center;
   gap: 5px;
 }
+
 .header_hero-title h1 {
   color: #fff;
   text-align: center;
   font-size: 42px;
   font-weight: 600;
 }
+
 .hr_line {
   margin-inline: auto;
   background-color: #7cdb31;
@@ -186,6 +193,7 @@ sup {
   align-items: center;
   gap: 24px;
 }
+
 .img-logos .alt-logos {
   width: auto;
   height: 100px;
@@ -202,9 +210,11 @@ sup {
   display: flex;
   align-items: center;
 }
+
 .nav_container .nav_spacer {
   width: 270px;
 }
+
 .nav_menu {
   display: flex;
   width: min(1140px, 100%);
@@ -213,6 +223,7 @@ sup {
   align-items: center;
   margin-right: 32px;
 }
+
 .nav_list {
   list-style: none;
   height: 100%;
@@ -220,12 +231,14 @@ sup {
   align-items: center;
   position: relative;
 }
+
 .nav_link {
   text-decoration: none;
   color: #fff;
   font-size: 15px;
   font-weight: 400;
 }
+
 .dropdown_icon {
   color: #ffffff;
   font-size: 13px;
@@ -233,6 +246,7 @@ sup {
   padding-inline-start: 8px;
   transition: 0.5s all ease;
 }
+
 .dropdown_menu {
   display: none;
   position: absolute;
@@ -244,6 +258,7 @@ sup {
   box-shadow: 0px 4px 4px 0px #3b2aac;
   width: max-content;
 }
+
 .dropdown_menu::before {
   content: "";
   position: absolute;
@@ -251,11 +266,13 @@ sup {
   height: 4px;
   background: #3b2aac;
 }
+
 .dropdown_navList {
   position: relative;
   list-style: none;
   padding: 10px;
 }
+
 .dropdown_navList:not(:last-child)::before {
   content: "";
   position: absolute;
@@ -264,24 +281,29 @@ sup {
   bottom: 0;
   border-bottom: 1px solid #7cdb31;
 }
+
 .dropdown_navLink {
   text-decoration: none;
   color: #fff;
   font-size: 14px;
   font-weight: 400;
 }
+
 .nav_list:hover .dropdown_menu {
   display: block;
 }
+
 .nav_list:hover .dropdown_icon {
   transform: rotateX(180deg);
 }
+
 /* main */
 main {
   width: 100%;
   min-height: calc(100vh - 200px - 56px - 248px);
 }
-footer {
+
+/* footer {
   position: relative;
   height: 248px;
   bottom: 0;
@@ -360,7 +382,7 @@ p.footer_desc-text:first-child {
   font-size: 16px;
   font-weight: 400;
   background: #000;
-}
+} */
 
 .primary-btn {
   all: initial;
@@ -397,6 +419,7 @@ p.footer_desc-text:first-child {
   flex-direction: column;
   justify-content: center;
 }
+
 .card_img {
   position: relative;
   width: 100%;
@@ -410,12 +433,14 @@ p.footer_desc-text:first-child {
   margin-bottom: 8px;
   transition: 0.5s all ease;
 }
+
 .card_img img {
   width: 100%;
   object-fit: cover;
   object-position: center;
   transition: 0.5s all ease;
 }
+
 .show_full-icon {
   width: 18px;
   height: 18px;
@@ -431,6 +456,7 @@ p.footer_desc-text:first-child {
   right: 0.8rem;
   cursor: pointer;
 }
+
 .card_identity {
   display: flex;
   flex-direction: column;
@@ -438,6 +464,7 @@ p.footer_desc-text:first-child {
   gap: 6px;
   margin-top: 8px;
 }
+
 .profile_name {
   cursor: pointer;
   color: #010000;
@@ -447,6 +474,7 @@ p.footer_desc-text:first-child {
   font-weight: 600;
   line-height: 1.3em;
 }
+
 .profile_designation {
   display: inline-flex;
   padding: 3px 6px;
@@ -459,6 +487,7 @@ p.footer_desc-text:first-child {
   border-radius: 8.195px;
   border: 1px solid #010000;
 }
+
 .profile_description {
   display: none;
   margin-top: 8px;
@@ -469,5 +498,117 @@ p.footer_desc-text:first-child {
   text-align: left;
   transition: 0.5s all ease-in;
 }
+
 /* Dynamic Profile Card Ends*/
 
+
+/* ------ New Footer Start -------*/
+footer {
+  position: relative;
+  height: 248px;
+  bottom: 0;
+  background-image: url("../assets/img/bg-footer.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.footer_wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  top: 0;
+  background: linear-gradient(0deg,
+      rgba(1, 139, 131, 0.9) 0%,
+      rgba(1, 139, 131, 0.9) 100%);
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_quicklinks {
+  width: 85%;
+  height: max-content;
+  margin-inline: auto;
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer_inner-container h3 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.line {
+  margin-inline: auto;
+  background-color: #7cdb31;
+  height: 2px;
+  width: 70%;
+  margin-bottom: 15px;
+}
+
+p.footer_desc-text:first-child {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+
+p.footer_desc-text:nth-child(2) {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.links_wrapper {
+  width: 100%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.footer_inner-description span {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 0px;
+}
+
+.footer_inner-description .mail {
+  padding-right: 40px;
+}
+
+.footer_inner-description .link_text {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.footer_inner-description .link_text:hover {
+  color: #02B0E3;
+}
+
+.footer_copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 36px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  background: #000;
+}
+
+/* ------ New Footer Ends -------*/
