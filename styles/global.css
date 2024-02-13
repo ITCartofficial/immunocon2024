@@ -556,7 +556,7 @@ footer {
 p.footer_desc-text:first-child {
   font-size: 18px;
   font-weight: 600;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   text-align: center;
   color: #fff;
 }
@@ -564,7 +564,7 @@ p.footer_desc-text:first-child {
 p.footer_desc-text:nth-child(2) {
   font-size: 18px;
   font-weight: 600;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   text-align: center;
   color: #fff;
   margin-bottom: 10px;
