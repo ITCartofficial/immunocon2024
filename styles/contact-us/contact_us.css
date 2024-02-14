@@ -1,0 +1,170 @@
+.main_container {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.main_container .primary_heading {
+    text-align: center;
+}
+
+.main_container .line {
+    margin-inline: auto;
+    background-color: #7cdb31;
+    height: 2px;
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+/* ------- Contact  -------- */
+.contact_wrapper {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    gap: 60px;
+    margin-top: 70px;
+}
+
+.map_container {
+    width: 41%;
+    height: max-content;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.123);
+}
+
+.form_container {
+    width: 55%;
+    height: max-content;
+}
+
+.contact_form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact_form .column {
+    width: 47%;
+    margin-top: 20px;
+}
+
+.column div:nth-child(2) {
+    margin-top: 50px;
+}
+
+.contact_form .field {
+    margin: 10px 0px;
+}
+
+.column input {
+    padding: 8px 0px 4px 0px;
+    margin-top: 8px;
+    width: 100%;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #a7a7a7;
+}
+
+.column label {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.3em;
+    color: var(--dark-color);
+}
+
+.subject_wrapper {
+    width: 100%;
+    margin-top: 30px;
+    position: relative;
+}
+
+.subject_wrapper label {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.3em;
+    color: #011C2A;
+}
+
+.subject_wrapper p {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.3em;
+    color: var(--dark-color);
+}
+
+.contact_form .message {
+    padding: 8px 0px 4px 0px;
+    margin-top: 8px;
+    max-width: 100%;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #a7a7a7;
+}
+
+.radio_group_wrapper {
+    width: 100%;
+    display: flex;
+    gap: 24px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.radio_1,
+.radio_2,
+.radio_3 {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+form  ::placeholder {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.3em;
+    color: rgba(0, 0, 0, 0.348);
+}
+
+.contact_form .btn_send {
+    padding: 12px 25px;
+    background: #02B0E3;
+    border: none;
+    border-radius: 2px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 50px;
+    float: right;
+}
+
+.contact_form .btn_send:hover {
+    background: linear-gradient(0deg, #02779A, #02779A),
+    linear-gradient(0deg, #02779A, #02779A);
+} 
+
+.airplane_container {
+    width: 246px;
+    height: 115px;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.airplane_container img {
+    width: 100%;
+    height: 100%;
+}
