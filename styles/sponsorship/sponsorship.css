@@ -1,0 +1,29 @@
+.main_container {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.main_container .primary_heading {
+    text-align: center;
+}
+
+.main_container .line {
+    margin-inline: auto;
+    background-color: #7cdb31;
+    height: 2px;
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.main_container p {
+    text-align: center;
+}
+
+.main_container .link_text {
+    color: #02B0E3;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4em;
+    font-family: 'Poppins', sans-serif;
+}
