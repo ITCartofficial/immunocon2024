@@ -191,7 +191,7 @@ sup {
   flex: 1;
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 15px;
 }
 
 .img-logos .alt-logos {
