@@ -46,3 +46,41 @@ function toggleColors() {
 }
 
 setInterval(toggleColors, 2000);
+
+// mobile nav
+const navLists = document.querySelector(".nav_menu");
+const mobileNavListClone = navLists.cloneNode(true);
+const mobileNav = document.getElementById("mobileNav");
+mobileNav.append(mobileNavListClone);
+
+const hamburgerMenuBtn = document.getElementById("hamburgerMenuBtn");
+const hamburgerDropdownMenuIcons = document.querySelectorAll('.mobile_nav .dropdown_icon');
+
+let isMenuOpen = false;
+let isDropDownOpen = false; 
+
+hamburgerMenuBtn.addEventListener("click", () => {
+  if (isMenuOpen) {
+    mobileNav.style.display = "none";
+    isMenuOpen = false;
+  } else {
+    mobileNav.style.display = "block";
+    isMenuOpen = true;
+  }
+});
+
+hamburgerDropdownMenuIcons.forEach(hamburgerDropdownMenuIcon => {
+  hamburgerDropdownMenuIcon.addEventListener('click', (e) => {
+    if(isDropDownOpen){
+      e.target.parentNode.querySelector('.dropdown_menu').style.display = 'none';
+      isDropDownOpen = false;
+      e.target.classList.remove('fa-angle-down')
+      e.target.classList.add('fa-angle-up')
+    } else {
+      e.target.parentNode.querySelector('.dropdown_menu').style.display = 'block';
+      e.target.classList.add('fa-angle-down')
+      e.target.classList.remove('fa-angle-up')
+      isDropDownOpen = true;
+    }
+  })
+})
