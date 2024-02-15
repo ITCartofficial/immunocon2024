@@ -170,6 +170,8 @@ header {
   text-align: center;
   font-size: 42px;
   font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.4em;
 }
 
 .hr_line {
@@ -722,7 +724,132 @@ p.footer_desc-text:nth-child(2) {
   .mobile_nav .dropdown_menu {
     width: inherit;
     position: relative;
-    top: -55px;
+    top: -45px;
+    border: none;
+    background: none;
+    box-shadow: none;
+    background: #ffffff36;
+  }
+  .dropdown_menu::before {
+    display: none;
+    
+  }
+  .dropdown_navList:not(:last-child)::before{
+    width: 95%;
+  }
+}
+
+
+
+
+@media (601px <= width <= 997px) {
+  header {
+    height: auto;
+    width: 100%;
+    position: relative;
+  }
+  .header_container {
+    height: 15vh;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+  }
+  .brand_logo {
+    min-width: auto;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .brand_logo-icon {
+    width: 180px;
+    min-width: 100px;
+  }
+  .header_hero-title {
+    position: relative;
+    left: -8px;
+  }
+  .header_hero-title h1 {
+    font-size: 24px;
+  }
+
+  .header_hero-title p, .header_hero-title sup {
+    font-size: 14px;
+  }
+  .img-logos {
+    display: none;
+  }
+
+  .nav_container {
+    display: none;
+  }
+
+  .hamburger_menu {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+  .menu_btn {
+    width: 30px;
+    height: 30px;
+    background: var(--cyan-color);
+    position: relative;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .menu_bar {
+    width: 65%;
+    height: 2.5px;
+    background: #fff;
+    border-radius: 8px;
+  }
+  .menu_bar::before,
+  .menu_bar::after {
+    content: "";
+    position: absolute;
+    width: 65%;
+    height: 2.5px;
+    background: #fff;
+    border-radius: 8px;
+    left: 50%;
+  }
+  .menu_bar::before {
+    transform: translate(-50%, -8px);
+  }
+  .menu_bar::after {
+    transform: translate(-50%, 8px);
+  }
+  .mobile_nav {
+    width: 100%;
+    min-height: 85vh;
+    position: absolute;
+    background: var(--cyan-color);
+    transition: 0.5s all ease-in;
+    top: 15vh;
+    display: none;
+  }
+  .mobile_nav .nav_menu {
+    min-height: 80vh;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1rem 2rem;
+  }
+  .mobile_nav .nav_menu li {
+    height: max-content;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-block: 1rem;
+  }
+  .mobile_nav .dropdown_menu {
+    width: inherit;
+    position: relative;
+    top: -45px;
     border: none;
     background: none;
     box-shadow: none;

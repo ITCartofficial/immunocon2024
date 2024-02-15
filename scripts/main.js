@@ -25,62 +25,69 @@ function loadCardDetails(e) {
   }
 }
 
-
-
 // Color toggle on registration page table
-const sep5Span = document.querySelector('.sep5');
-const sep30Span = document.querySelector('.sep30');
+if (document.querySelector(".sep5")) {
+  const sep5Span = document.querySelector(".sep5");
+  const sep30Span = document.querySelector(".sep30");
 
-function toggleColors() {
-    if (sep5Span.style.color === 'limegreen') {
-        sep5Span.style.color = 'white';
-        sep5Span.style.textDecoration = 'none'; 
-        sep30Span.style.color = 'white';
-        sep30Span.style.textDecoration = 'none'; 
+  function toggleColors() {
+    if (sep5Span.style.color === "limegreen") {
+      sep5Span.style.color = "white";
+      sep5Span.style.textDecoration = "none";
+      sep30Span.style.color = "white";
+      sep30Span.style.textDecoration = "none";
     } else {
-        sep5Span.style.color = 'limegreen';
-        sep5Span.style.textDecoration = 'underline'; 
-        sep30Span.style.color = 'limegreen';
-        sep30Span.style.textDecoration = 'underline'; 
+      sep5Span.style.color = "limegreen";
+      sep5Span.style.textDecoration = "underline";
+      sep30Span.style.color = "limegreen";
+      sep30Span.style.textDecoration = "underline";
     }
+  }
+
+  setInterval(toggleColors, 2000);
 }
 
-setInterval(toggleColors, 2000);
 
 // mobile nav
-const navLists = document.querySelector(".nav_menu");
-const mobileNavListClone = navLists.cloneNode(true);
-const mobileNav = document.getElementById("mobileNav");
-mobileNav.append(mobileNavListClone);
+if (document.getElementById("mobileNav")) {
+  const navLists = document.querySelector(".nav_menu");
+  const mobileNavListClone = navLists.cloneNode(true);
+  const mobileNav = document.getElementById("mobileNav");
+  mobileNav.append(mobileNavListClone);
 
-const hamburgerMenuBtn = document.getElementById("hamburgerMenuBtn");
-const hamburgerDropdownMenuIcons = document.querySelectorAll('.mobile_nav .dropdown_icon');
+  const hamburgerMenuBtn = document.getElementById("hamburgerMenuBtn");
+  const hamburgerDropdownMenuIcons = document.querySelectorAll(
+    ".mobile_nav .dropdown_icon"
+  );
 
-let isMenuOpen = false;
-let isDropDownOpen = false; 
+  let isMenuOpen = false;
+  let isDropDownOpen = false;
 
-hamburgerMenuBtn.addEventListener("click", () => {
-  if (isMenuOpen) {
-    mobileNav.style.display = "none";
-    isMenuOpen = false;
-  } else {
-    mobileNav.style.display = "block";
-    isMenuOpen = true;
-  }
-});
-
-hamburgerDropdownMenuIcons.forEach(hamburgerDropdownMenuIcon => {
-  hamburgerDropdownMenuIcon.addEventListener('click', (e) => {
-    if(isDropDownOpen){
-      e.target.parentNode.querySelector('.dropdown_menu').style.display = 'none';
-      isDropDownOpen = false;
-      e.target.classList.remove('fa-angle-down')
-      e.target.classList.add('fa-angle-up')
+  hamburgerMenuBtn.addEventListener("click", () => {
+    if (isMenuOpen) {
+      mobileNav.style.display = "none";
+      isMenuOpen = false;
     } else {
-      e.target.parentNode.querySelector('.dropdown_menu').style.display = 'block';
-      e.target.classList.add('fa-angle-down')
-      e.target.classList.remove('fa-angle-up')
-      isDropDownOpen = true;
+      mobileNav.style.display = "block";
+      isMenuOpen = true;
     }
-  })
-})
+  });
+
+  hamburgerDropdownMenuIcons.forEach((hamburgerDropdownMenuIcon) => {
+    hamburgerDropdownMenuIcon.addEventListener("click", (e) => {
+      if (isDropDownOpen) {
+        e.target.parentNode.querySelector(".dropdown_menu").style.display =
+          "none";
+        isDropDownOpen = false;
+        e.target.classList.remove("fa-angle-down");
+        e.target.classList.add("fa-angle-up");
+      } else {
+        e.target.parentNode.querySelector(".dropdown_menu").style.display =
+          "block";
+        e.target.classList.add("fa-angle-down");
+        e.target.classList.remove("fa-angle-up");
+        isDropDownOpen = true;
+      }
+    });
+  });
+}
