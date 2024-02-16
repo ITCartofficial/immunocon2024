@@ -71,17 +71,17 @@
     width: 100%;
     height: max-content;
     display: flex;
-    gap: 130px;
+    gap: 80px;
     margin-top: 88px;
 }
 
 .content_container {
-    width: 80%;
+    width: 70%;
 }
 
 .img_container {
-    width: 20%;
-    height: 328px;
+    width: 30%;
+    height: 360px;
 }
 
 .img_container img {
