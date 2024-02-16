@@ -622,6 +622,7 @@ p.footer_desc-text:nth-child(2) {
     height: auto;
     width: 100%;
     position: relative;
+    border-bottom: 1px solid var(--dark-color);
   }
   .header_container {
     height: 15vh;
@@ -747,6 +748,7 @@ p.footer_desc-text:nth-child(2) {
     height: auto;
     width: 100%;
     position: relative;
+    border-bottom: 1px solid var(--dark-color);
   }
   .header_container {
     height: 15vh;
