@@ -86,7 +86,7 @@
     color: var(--dark-color);
     font-size: 16px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.4em;
     font-family: 'Poppins', sans-serif;
 }
@@ -141,6 +141,11 @@
     font-size: 18px;
     color: var(--dark-color);
     cursor: pointer;
+}
+
+.btn_nomination:hover {
+    background: #37ACEC;
+    color: #fff;
 }
 
 .btn_guidelines {

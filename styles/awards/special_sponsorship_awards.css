@@ -18,14 +18,14 @@
 .gold_cup_1 {
     position: absolute;
     top: -30%;
-    left: 18%;
+    left: 16%;
     height: 113px;
 }
 
 .gold_cup_2 {
     position: absolute;
     top: -30%;
-    right: 20%;
+    right: 17%;
     height: 113px;
 }
 
@@ -100,10 +100,6 @@
     font-weight: 600;
     line-height: 1.5em;
     font-family: 'Poppins', sans-serif;
-}
-
-.main_container .para_text {
-    font-weight: 500;
 }
 
 .link_text {

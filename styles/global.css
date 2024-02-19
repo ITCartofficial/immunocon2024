@@ -616,7 +616,7 @@ p.footer_desc-text:nth-child(2) {
 }
 
 /* ------ New Footer Ends -------*/
-
+/* --------------- Mobile ----------- */
 @media (200px <= width <= 600px) {
   header {
     height: auto;
@@ -740,9 +740,7 @@ p.footer_desc-text:nth-child(2) {
   }
 }
 
-
-
-
+/* ------------- Tablet --------------*/
 @media (601px <= width <= 997px) {
   header {
     height: auto;

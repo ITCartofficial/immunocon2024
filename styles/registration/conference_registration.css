@@ -22,9 +22,9 @@
 
 .btn_reg_container {
     width: 160px;
-    display: flex; 
-    justify-content: end; 
- } 
+    display: flex;
+    justify-content: end;
+}
 
 .btn_register {
     width: 190px;
@@ -48,8 +48,8 @@
 
 .btn_register:hover {
     background: linear-gradient(0deg, #02779A, #02779A),
-    linear-gradient(0deg, #02779A, #02779A);
-} 
+        linear-gradient(0deg, #02779A, #02779A);
+}
 
 /* ----------- Registration fee table --------- */
 table {
@@ -71,7 +71,7 @@ table th {
 
 .registration_fee_table tr:nth-child(even) {
     background-color: #EAEAEA;
- }
+}
 
 table thead tr {
     height: 40px;
@@ -83,7 +83,9 @@ table tbody tr {
     height: 90px;
 }
 
-table, th, td {
+table,
+th,
+td {
     border: 1px solid black;
     border-collapse: collapse;
     white-space: nowrap;
@@ -97,12 +99,14 @@ table, th, td {
 .early_bard_col {
     width: 294px;
 }
+
 .plan_col {
     width: 394px;
 }
+
 .delegates_fee_table tr:nth-child(odd) {
     background-color: #EAEAEA;
- }
+}
 
 .full_banner {
     width: 100%;
@@ -134,37 +138,45 @@ table, th, td {
     list-style: none;
     padding-left: 0;
     margin-top: 32px;
-  }
-  
-  .radio-list li {
+}
+
+.radio-list li {
     display: flex;
     position: relative;
-    margin-bottom: 16px; 
-  }
-  
-  .radio-list li:before {
+    margin-bottom: 16px;
+}
+
+.radio-list li:before {
     content: "";
-    flex-shrink: 0; 
-    margin-right: 10px; 
-    width: 10px; 
-    height: 10px; 
-    border: 2px solid #02B0E3; 
-    border-radius: 50%; 
+    flex-shrink: 0;
+    margin-right: 10px;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #02B0E3;
+    border-radius: 50%;
     margin-top: 6px;
-    animation: blinkRadio 2s infinite; 
-  }
-  
-  @keyframes blinkRadio {
-    0% { background-color: transparent; }
-    50% { background-color: #02B0E3; } 
-    100% { background-color: transparent; }
-  }
+    animation: blinkRadio 2s infinite;
+}
+
+@keyframes blinkRadio {
+    0% {
+        background-color: transparent;
+    }
+
+    50% {
+        background-color: #02B0E3;
+    }
+
+    100% {
+        background-color: transparent;
+    }
+}
 
 .full_banner_gradient {
     width: 100%;
     height: 47px;
     background: linear-gradient(90deg, #008a82 28.58%, #3a29ab 84.03%);
-}  
+}
 
 .full_banner_gradient p {
     text-align: center;
@@ -188,7 +200,3 @@ table, th, td {
 .refund_policy {
     margin-top: 60px;
 }
-  
-  
-  
-  

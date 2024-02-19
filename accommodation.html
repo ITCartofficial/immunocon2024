@@ -19,6 +19,8 @@
     <!-- css -->
     <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./styles/accommodation/accommodation.css" />
+    <!-- Script -->
+    <script src="./scripts/main.js" defer></script>
 </head>
 
 <body>
@@ -38,13 +40,21 @@
                     at J.N. Tata Auditorium, Bengaluru
                 </p>
             </div>
+            <!-- hamburger menu -->
+            <div class="hamburger_menu">
+                <div id="hamburgerMenuBtn" class="menu_btn">
+                    <span class="menu_bar"></span>
+                </div>
+            </div>
             <!-- other logos -->
             <div class="img-logos">
                 <img class="alt-logos" src="./assets/img/IISC-logo.png" alt="IISC Logo" />
                 <img class="alt-logos" src="./assets/img/Indian-immunology-society.png" alt="IMS Logo" />
                 <img class="alt-logos" src="./assets/img/The Febs Journal.png" alt="The Febs Journal Logo" />
             </div>
+            <div id="mobileNav" class="mobile_nav"></div>
         </div>
+        <!--------- Navbar ----------->
         <div class="nav_container">
             <div class="nav_spacer"></div>
             <ul class="nav_menu">
@@ -102,7 +112,7 @@
                             <a href="../program/national-faculty.html" class="dropdown_navLink">National Faculty</a>
                         </li>
                         <li class="dropdown_navList">
-                            <a href="#" class="dropdown_navLink">Social Events</a>
+                            <a href="./program/social-events.html" class="dropdown_navLink">Social Events</a>
                         </li>
                     </ul>
                 </li>
@@ -111,7 +121,8 @@
                     <i class="fa fa-angle-down dropdown_icon" aria-hidden="true"></i>
                     <ul class="dropdown_menu">
                         <li class="dropdown_navList">
-                            <a href="https://forms.gle/ezKcrGxeNaZcpkdz8" class="dropdown_navLink">Upload Your Poster Abstract</a>
+                            <a href="https://forms.gle/ezKcrGxeNaZcpkdz8" class="dropdown_navLink">Upload Your Poster
+                                Abstract</a>
                         </li>
                         <li class="dropdown_navList">
                             <a href="../abstract-guidelines/oral-paper-guidelines.html" class="dropdown_navLink">Oral
@@ -139,7 +150,7 @@
                             <a href="#" class="dropdown_navLink">CME</a>
                         </li>
                         <li class="dropdown_navList">
-                            <a href="#" class="dropdown_navLink">Flow Cytometry Workshop</a>
+                            <a href="./registration/flow-cytometry-workshop.html" class="dropdown_navLink">Flow Cytometry Workshop</a>
                         </li>
                     </ul>
                 </li>
@@ -152,7 +163,8 @@
                                 Busary</a>
                         </li>
                         <li class="dropdown_navList">
-                            <a href="./awards/immunocon-2024-awards.html" class="dropdown_navLink">IMMUNOCON - 2024 Awards</a>
+                            <a href="./awards/immunocon-2024-awards.html" class="dropdown_navLink">IMMUNOCON - 2024
+                                Awards</a>
                         </li>
                         <li class="dropdown_navList">
                             <a href="../awards/student-travel-bursaries.html" class="dropdown_navLink">Student Travel
@@ -205,98 +217,58 @@
             consectetur. Dui metus et odio rhoncus nec. In malesuada quis sollicitudin id nunc suspendisse id tristique.
             Orci ac nam.</p>
 
-        <table>
-            <thead>
-                <tr>
-                    <th class="sl_no">Sl. No.</th>
-                    <th>Hotel Name</th>
-                    <th>Dist. To IISc</th>
-                    <th>Category</th>
-                    <th>Location</th>
-                    <th>Booking Contact</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td class="hotel_name"><span class="text_bold">The Saga Hotel 5</span>, Block W, Arjun Nagar, Green
-                        Park,New Delhi-110016</td>
-                    <td>4 Km</td>
-                    <td>3 Star</td>
-                    <td><a href="#">View</a></td>
-                    <td>
-                        <p>Mr. Kamal </p>
-                        <p>9971758827</p>
-                        <p><a href="mailto:sales@sagahotels.in">sales@sagahotels.in</a></p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td class="hotel_name"><span class="text_bold">The Saga Hotel 5</span>, Block W, Arjun Nagar, Green
-                        Park,New Delhi-110016</td>
-                    <td>4 Km</td>
-                    <td>3 Star</td>
-                    <td><a href="#">View</a></td>
-                    <td>
-                        <p>Mr. Kamal </p>
-                        <p>9971758827</p>
-                        <p><a href="mailto:sales@sagahotels.in">sales@sagahotels.in</a></p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td class="hotel_name"><span class="text_bold">The Saga Hotel 5</span>, Block W, Arjun Nagar, Green
-                        Park,New Delhi-110016</td>
-                    <td>4 Km</td>
-                    <td>3 Star</td>
-                    <td><a href="#">View</a></td>
-                    <td>
-                        <p>Mr. Kamal </p>
-                        <p>9971758827</p>
-                        <p><a href="mailto:sales@sagahotels.in">sales@sagahotels.in</a></p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td class="hotel_name"><span class="text_bold">The Saga Hotel 5</span>, Block W, Arjun Nagar, Green
-                        Park,New Delhi-110016</td>
-                    <td>4 Km</td>
-                    <td>3 Star</td>
-                    <td><a href="#">View</a></td>
-                    <td>
-                        <p>Mr. Kamal </p>
-                        <p>9971758827</p>
-                        <p><a href="mailto:sales@sagahotels.in">sales@sagahotels.in</a></p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td class="hotel_name"><span class="text_bold">The Saga Hotel 5</span>, Block W, Arjun Nagar, Green
-                        Park,New Delhi-110016</td>
-                    <td>4 Km</td>
-                    <td>3 Star</td>
-                    <td><a href="#">View</a></td>
-                    <td>
-                        <p>Mr. Kamal </p>
-                        <p>9971758827</p>
-                        <p><a href="mailto:sales@sagahotels.in">sales@sagahotels.in</a></p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td class="hotel_name"><span class="text_bold">The Saga Hotel 5</span>, Block W, Arjun Nagar, Green
-                        Park,New Delhi-110016</td>
-                    <td>4 Km</td>
-                    <td>3 Star</td>
-                    <td><a href="#">View</a></td>
-                    <td>
-                        <p>Mr. Kamal </p>
-                        <p>9971758827</p>
-                        <p><a href="mailto:sales@sagahotels.in">sales@sagahotels.in</a></p>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="table_container">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="sl_no">Sl. No.</th>
+                        <th>Hotel Name</th>
+                        <th>Dist. To IISc</th>
+                        <th>Category</th>
+                        <th>Location</th>
+                        <th>Booking Contact</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td class="hotel_name"><span class="text_bold">HYDE PARK APARTHOTEL</span>, 137/7,9th main, 6th A Cross Rd, Raj Mahal Vilas Extension, Armane Nagar, Bengaluru, Karnataka 560080</td>
+                        <td>1.5 Km</td>
+                        <td>3 Star</td>
+                        <td><a href="https://maps.app.goo.gl/xoun3k8pTwU2epar5">View</a></td>
+                        <td>
+                            <p>Mr. Sanjay Patnaik</p>
+                            <p>9886848586</p>
+                            <p><a href="mailto:tejexjblr@gmail.com">tejexjblr@gmail.com</a></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td class="hotel_name"><span class="text_bold">Comfort INN Insys</span>, 46,1st Main Road, Gokula 1st Stage Mathikere, Yeswanthpur, Bengaluru, Karnataka 560054</td>
+                        <td>3.6 Km</td>
+                        <td>4 Star</td>
+                        <td><a href="https://maps.app.goo.gl/U97DyRjekuoJeYj79">View</a></td>
+                        <td>
+                            <p>Mr. Sanjay Patnaik</p>
+                            <p>9886848586</p>
+                            <p><a href="mailto:tejexjblr@gmail.com">tejexjblr@gmail.com</a></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="hotel_name"><span class="text_bold">Gokulam Grand Hotel & Spa</span>, 115, Mangalore - Villupuram Rd, HMR Layout, Gokula Extension, Jalahalli, Bengaluru, Karnataka 560054</td>
+                        <td>5 Km</td>
+                        <td>5 Star</td>
+                        <td><a href="https://maps.app.goo.gl/fZ1f2D9w6foHadBYA">View</a></td>
+                        <td>
+                            <p>Mr. Sanjay Patnaik </p>
+                            <p>9886848586</p>
+                            <p><a href="mailto:tejexjblr@gmail.com">tejexjblr@gmail.com</a></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
         <!-- Important Spots -->
         <h2 class="primary_heading">Important Spots</h2>
         <div class="line"></div>
