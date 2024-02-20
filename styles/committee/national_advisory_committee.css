@@ -1,47 +1,54 @@
-.main_container{
-    margin-top: 60px;
-    margin-bottom: 60px;
+.main_container {
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 .line {
-    background-color: #7cdb31;
-    height: 2px;
-    width: min(95%, 450px);
-    margin-bottom: 20px;
-  }
+  background-color: #7cdb31;
+  height: 2px;
+  width: min(95%, 450px);
+  margin-bottom: 20px;
+}
 
-  .photo_container{
-    width: 100%;
-    height: max-content;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100%;
-    gap: 40px 16px;
-    flex-wrap: wrap;
-    margin-top: 40px;
-  }
+.photo_container {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  gap: 40px 16px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
 
-  /* For national faculty page */
-  .btn_show_more {
-    padding: 8px 18px;
-    background: #02B0E3;
-    border: none;
-    border-radius: 2px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    color: #fff;
-    cursor: pointer;
-    text-decoration: none;
-    text-align: center;
-    margin-top: 50px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+/* For national faculty page */
+.btn_show_more {
+  padding: 8px 18px;
+  background: #02B0E3;
+  border: none;
+  border-radius: 2px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 50px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .btn_show_more:hover {
-    background: linear-gradient(0deg, #02779A, #02779A),
+  background: linear-gradient(0deg, #02779A, #02779A),
     linear-gradient(0deg, #02779A, #02779A);
-} 
+}
+
+
+@media (200px <=width <=600px) {
+  .photo_container {
+    gap: 30px 16px;
+  }
+}

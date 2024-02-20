@@ -6,6 +6,6 @@
 .line {
     background-color: #7cdb31;
     height: 2px;
-    width: 30%;
+    width: min(95%, 400px);
     margin-bottom: 20px;
   }

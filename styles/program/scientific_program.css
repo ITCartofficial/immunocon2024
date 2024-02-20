@@ -10,8 +10,13 @@
   margin-inline: auto;
   background-color: #7cdb31;
   height: 2px;
-  width: 30%;
+  width: min(95%, 400px);
   margin-bottom: 20px;
+}
+
+.table_container {
+    width: 100%;
+    height: max-content;
 }
 
 table {
@@ -20,6 +25,7 @@ table {
     font-weight: 600;
     font-size: 16px;
     margin-top: 37px;
+    margin-bottom: 10px;
 }
 
 table, th, td {
@@ -98,6 +104,7 @@ tbody .col_name {
 
 tbody .description {
     padding-left: 24px;
+    padding-right: 15px;
 }
 
 .download_container {
@@ -137,4 +144,19 @@ tbody .description {
     background: linear-gradient(0deg, #02779A, #02779A),
     linear-gradient(0deg, #02779A, #02779A);
     ;
+}
+
+
+@media (200px <=width <=600px) {
+    .table_container {
+        overflow: auto;
+    }
+    .download_container {
+        height: 90px;
+    }
+    .download_container .wrapper {
+        width: 95%;
+        gap: 10px;
+        flex-direction: column;
+    }
 }

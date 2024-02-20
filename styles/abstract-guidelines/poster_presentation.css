@@ -11,7 +11,7 @@
   margin-inline: auto;
   background-color: #7cdb31;
   height: 2px;
-  width: 35%;
+  width: min(95%, 450px);
   margin-bottom: 20px;
 }
 
@@ -165,13 +165,18 @@
     margin-top: 100px;
 }
 
+.table_container {
+    width: 100%;
+    height: max-content;
+    margin-top: 37px;
+}
 table {
     width: 100%;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 16px;
-    margin-top: 37px;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 table thead tr {
@@ -239,4 +244,53 @@ table .col_pp {
     background: linear-gradient(0deg, #02779A, #02779A),
     linear-gradient(0deg, #02779A, #02779A);
     ;
+}
+
+/* ------ Mobile -------- */
+@media (200px <=width <=600px) {
+    .content_wrapper{
+        flex-direction: column;
+    }
+    .content_wrapper .container_1 {
+        width: 100%;
+    }
+    .content_wrapper .container_2 {
+        width: 100%;
+        display: none;
+    }
+    .poster_schedule {
+        margin-top: 50px;
+    }
+    .table_container {
+        overflow-x: scroll;
+    }
+    /* Download button */
+    .download_banner {
+        height: 90px;
+    }
+    .download_banner .wrapper {
+        width: 95%;
+        gap: 10px;
+        flex-direction: column;
+    }
+}
+
+/* ----- Tablet ---- */
+@media (601px <=width <=997px) {
+    .content_wrapper{
+        flex-direction: column;
+    }
+    .content_wrapper .container_1 {
+        width: 100%;
+    }
+    .content_wrapper .container_2 {
+        width: 100%;
+        display: none;
+    }
+    .poster_schedule {
+        margin-top: 50px;
+    }
+    .table_container {
+        overflow-x: scroll;
+    }
 }

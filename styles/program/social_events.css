@@ -10,7 +10,7 @@
   margin-inline: auto;
   background-color: #7cdb31;
   height: 2px;
-  width: 30%;
+  width: min(95%, 400px);
   margin-bottom: 20px;
 }
 
@@ -60,11 +60,12 @@
 
 .yakshagana_container .line, 
 .dj_dancing_container .line {
-    width: 50%;
+    /* width: 50%; */
+    width: min(95%, 300px);
     margin-inline: auto;
     background-color: #7cdb31;
     height: 2px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .yakshagana_container .img_wrapper, 
@@ -77,6 +78,21 @@
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+
+/* --------------- Mobile ----------- */
+@media (200px <=width <=600px) {
+    .program_poster_wrapper {
+        margin-top: 30px;
+    }
+}
+
+
+/* ------------- Tablet --------------*/
+@media (601px <=width <=997px) {
+    .program_poster_wrapper {
+        margin-top: 30px;
+    }
 }
 
 
