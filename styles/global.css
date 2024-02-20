@@ -410,12 +410,6 @@ p.footer_desc-text:first-child {
   height: max-content;
 }
 
-.heading_text {
-  color: #000;
-  font-size: 28px;
-  font-weight: 600;
-}
-
 /* Dynamic Profile Card */
 .dynamic_cards {
   width: min(100%, 200px);
@@ -618,6 +612,10 @@ p.footer_desc-text:nth-child(2) {
 /* ------ New Footer Ends -------*/
 /* --------------- Mobile ----------- */
 @media (200px <= width <= 600px) {
+    /* --- Utility Classes ----- */
+    .primary_heading{
+      font-size: 22px;
+    }
   header {
     height: auto;
     width: 100%;
@@ -738,10 +736,53 @@ p.footer_desc-text:nth-child(2) {
   .dropdown_navList:not(:last-child)::before{
     width: 95%;
   }
+    /* -------------- Dynamic Card -------- */
+  .dynamic_profile-container {
+    margin-bottom: 20px !important;
+  }
+  .dynamic_cards {
+    width: min(100%, 150px);
+  }
+  .card_img {
+    height: max-content;
+  }
+
+  /* ------- Footer ------- */
+  .footer_quicklinks {
+    width: 90%;
+  }
+  .footer_inner-container h3 {
+    margin: 30px 0px 10px 0px;
+    font-size: 20px;
+  }
+  p.footer_desc-text:first-child {
+    font-size: 16px;
+  }
+  p.footer_desc-text:nth-child(2){
+    font-size: 16px;
+  }
+  .links_wrapper{
+    margin-bottom: 20px;
+    margin-left: 15px;
+  }
+  .footer_inner-description span {
+    font-size: 14px;
+  }
+  .footer_inner-description .link_text {
+    font-size: 14px;
+  }
+  .footer_copyright {
+    font-size: 13px;
+    padding: 0px 10px;
+  }
 }
 
 /* ------------- Tablet --------------*/
 @media (601px <= width <= 997px) {
+  /* --- Utility Classes ----- */
+  .primary_heading{
+    font-size: 28px;
+  }
   header {
     height: auto;
     width: 100%;
