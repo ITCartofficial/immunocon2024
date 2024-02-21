@@ -110,6 +110,8 @@
 }
 
 .content_container .btn_application_form {
+    text-decoration: none;
+    display: inline-block;
     margin-top: 24px;
     padding: 12px 24px;
     background: #37ACEC;
@@ -158,6 +160,7 @@
 }
 
 .btn_data_sheet {
+    text-decoration: none;
     padding: 12px 24px;
     background: #fff;
     border: 2px solid #37ACEC;
@@ -175,6 +178,7 @@
 }
 
 .btn_guidelines {
+    text-decoration: none;
     padding: 12px 24px;
     background: #37ACEC;
     border-radius: 2px;
