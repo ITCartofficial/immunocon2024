@@ -1,47 +1,207 @@
-.main_container{
-      margin-top: 60px;
-      margin-bottom: 60px;
-  }
-  
-  .content_wrapper .line {
-    margin-inline: auto;
-    background-color: #7cdb31;
-    height: 2px;
-    width: 70%;
-    margin-bottom: 20px;
-  }
-  
+.main_container {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.content_wrapper .line {
+  margin-inline: auto;
+  background-color: #7cdb31;
+  height: 2px;
+  width: min(95%, 450px);
+  margin-bottom: 20px;
+}
+
+.about_iis_container {
+  display: flex;
+  gap: 40px;
+}
+
+.about_iis_container .content_wrapper {
+  width: 60%;
+  height: max-content;
+}
+
+.about_iis_container .content_wrapper ul {
+  padding: 10px 0px 10px 40px;
+}
+
+.about_iis_container .hero_image_container {
+  width: 40%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 25px;
+}
+
+.hero_image_container .image_wrapper {
+  width: 100%;
+  height: 330px;
+  border-radius: 12px;
+  box-shadow: 14px 20px 30px #008a8266;
+  overflow: hidden;
+}
+
+.about_iis_container .image_wrapper img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.slider_wrapper {
+  display: none;
+}
+
+/* --------------- Mobile ----------- */
+@media (200px <=width <=600px) {
   .about_iis_container {
-    display: flex;
-    gap: 40px;
-  }
-  
-  .about_iis_container .content_wrapper {
-    width: 60%;
-    height: max-content;
-  }
-  
-  .about_iis_container .content_wrapper ul {
-    padding: 10px 0px 10px 40px;
-  }
-  .about_iis_container .hero_image_container {
-    width: 40%;
-    height: max-content;
-    display: flex;
     flex-direction: column;
-    gap: 50px;
-    margin-top: 25px;
+    padding: 0px 10px;
   }
-  
-  .hero_image_container .image_wrapper {
+
+  .about_iis_container .content_wrapper {
     width: 100%;
-    height: 330px;
-    border-radius: 12px;
-    box-shadow:  14px 20px 30px #008A8266;
+  }
+
+  .about_iis_container .hero_image_container {
+    width: 100%;
+    display: none;
+  }
+
+  /* ------- Slider ---- */
+  .slider_wrapper {
+    display: block;
+    width: 100%;
+    height: 260px;
+  }
+
+  .slider-container {
+    width: 100%;
+    height: max-content;
+  }
+
+  .slide {
+    width: 100%;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .slide img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: fill;
+    cursor: pointer;
+    border-radius: 7px;
+    box-shadow: 8px 8px 20px #008a8266;
     overflow: hidden;
   }
-  .about_iis_container .image_wrapper img {
-    object-fit: cover;
+
+  .radio-buttons {
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 25px;
+  }
+
+  .radio-buttons label {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #bbb;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+
+  .radio-buttons label:hover {
+    background-color: #999;
+  }
+
+  .radio-buttons input[type="radio"] {
+    display: none;
+  }
+
+  .radio-buttons input[type="radio"]:checked + label {
+    background-color: #02B0E3;
+  }
+}
+
+/* ------------- Tablet --------------*/
+@media (601px <=width <=997px) {
+  .about_iis_container {
+    flex-direction: column;
+    padding: 0px 15px;
+  }
+
+  .about_iis_container .content_wrapper {
+    width: 100%;
+  }
+
+  .about_iis_container .hero_image_container {
+    width: 100%;
+    display: none;
+  }
+
+  /* ------- Slider ---- */
+  .slider_wrapper {
+    display: block;
+    width: 100%;
+    height: 480px;
+    margin-top: 30px;
+  }
+
+  .slider-container {
+    width: 100%;
+    height: max-content;
+  }
+
+  .slide {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    box-shadow: 8px 8px 20px #008a8266;
+    overflow: hidden;
+  }
+
+  .slide img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    cursor: pointer;
   }
+
+  .radio-buttons {
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 30px;
+  }
+
+  .radio-buttons label {
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #bbb;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+
+  .radio-buttons label:hover {
+    background-color: #999;
+  }
+
+  .radio-buttons input[type="radio"] {
+    display: none;
+  }
+
+  .radio-buttons input[type="radio"]:checked + label {
+    background-color: #02B0E3;
+  }
+}
