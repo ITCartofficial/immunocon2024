@@ -11,7 +11,7 @@
     margin-inline: auto;
     background-color: #7cdb31;
     height: 2px;
-    width: 30%;
+    width: min(95%, 400px);
     margin-bottom: 20px;
 }
 
@@ -26,4 +26,20 @@
     font-weight: 400;
     line-height: 1.4em;
     font-family: 'Poppins', sans-serif;
+}
+
+
+/* --------------- Mobile ----------- */
+@media (200px <=width <=600px) {
+    .main_container {
+        height: calc(100vh - 552px);
+    }
+}
+
+
+/* ------------- Tablet --------------*/
+@media (601px <=width <=997px) {
+    .main_container {
+        height: calc(100vh - 635px);
+    }
 }

@@ -11,7 +11,7 @@
     margin-inline: auto;
     background-color: #7cdb31;
     height: 2px;
-    width: 30%;
+    width: min(95%, 350px);
     margin-bottom: 20px;
 }
 
@@ -30,36 +30,33 @@
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.123);
+    order: 1;
 }
 
 .form_container {
     width: 55%;
-    height: max-content;
+    height: 600px;
+    order: 2;
 }
 
 .contact_form {
     width: 100%;
     height: 100%;
+    position: relative;
+}
+
+.contact_form .row {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.contact_form .column {
-    width: 47%;
+    width: 100%;
     margin-top: 20px;
+    gap: 15px 20px;
 }
 
-.column div:nth-child(2) {
-    margin-top: 50px;
+.row .field {
+    width: 47%;
 }
-
-.contact_form .field {
-    margin: 10px 0px;
-}
-
-.column input {
-    padding: 8px 0px 4px 0px;
+.row input {
+    padding: 0px 0px 4px 0px;
     margin-top: 8px;
     width: 100%;
     font-weight: 400;
@@ -67,19 +64,22 @@
     outline: none;
     border-bottom: 1px solid #a7a7a7;
 }
+.contact_form .row:nth-child(2) {
+    margin-top: 50px;
+}
 
-.column label {
+.row label, .message_label {
     font-size: 14px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 500 !important;
     line-height: 1.3em;
     color: var(--dark-color);
-}
+} 
 
 .subject_wrapper {
     width: 100%;
-    margin-top: 30px;
+    margin-top: 50px;
     position: relative;
 }
 
@@ -114,7 +114,8 @@
 .radio_group_wrapper {
     width: 100%;
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    gap: 10px 24px;
     margin-bottom: 20px;
     margin-top: 15px;
 }
@@ -138,7 +139,7 @@ form  ::placeholder {
 }
 
 .contact_form .btn_send {
-    padding: 12px 25px;
+    padding: 12px 0px;
     background: #02B0E3;
     border: none;
     border-radius: 2px;
@@ -148,8 +149,10 @@ form  ::placeholder {
     color: #fff;
     cursor: pointer;
     text-align: center;
-    margin-top: 50px;
-    float: right;
+    position: absolute;
+    right: 0%;
+    bottom: 20%;
+    width: 150px;
 }
 
 .contact_form .btn_send:hover {
@@ -167,4 +170,58 @@ form  ::placeholder {
 .airplane_container img {
     width: 100%;
     height: 100%;
+}
+
+/* --------------- Mobile ----------- */
+@media (200px <=width <=600px) {
+    .contact_wrapper {
+        flex-direction: column;
+    }
+    .map_container {
+        width: 100%;
+        order: 2;
+    }
+    .form_container {
+        width: 100%;
+        padding: 0px 10px;
+        order: 1;
+        height: 650px;
+    }
+    .contact_form .row {
+        flex-direction: column;
+    }
+    .row .field {
+        width: 100%;
+    }
+    .contact_form .row:nth-child(2) {
+        margin-top: 20px;
+    }
+    .contact_form .btn_send {
+        position: absolute;
+        left: 50%;
+        bottom: -50%;
+        transform: translateX(-50%);
+    }
+    .airplane_container {
+        display: none;
+    }
+
+}
+
+
+/* ------------- Tablet --------------*/
+@media (601px <=width <=997px) {
+    .contact_wrapper {
+        flex-direction: column;
+    }
+    .map_container {
+        width: 100%;
+        order: 2;
+    }
+    .form_container {
+        order: 1;
+        width: 100%;
+        height: 520px;
+    }
+
 }
