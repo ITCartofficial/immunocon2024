@@ -6,7 +6,7 @@ function showSlides() {
     slides[i].classList.remove("active");
     setTimeout(() => {
       slides[i].style.display = "none";
-    }, 500);
+    }, 300);
   }
   slideIndex++;
   if (slideIndex > slides.length) {
@@ -15,8 +15,8 @@ function showSlides() {
 
   slides[slideIndex - 1].classList.add("active");
   setTimeout(() => {
-    slides[slideIndex - 1].style.display = "grid";
-  }, 500);
+    slides[slideIndex - 1].style.display = "flex";
+  }, 300);
 
   setTimeout(showSlides, 3500);
 }
@@ -30,7 +30,7 @@ function prevSlide() {
   for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-  slides[slideIndex - 1].style.display = "grid";
+  slides[slideIndex - 1].style.display = "flex";
 }
 
 function nextSlide() {
