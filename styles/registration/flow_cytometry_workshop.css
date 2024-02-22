@@ -1,6 +1,6 @@
 .main_container {
     margin-top: 60px;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 }
 
 .main_container .primary_heading {
@@ -10,7 +10,7 @@
     background-color: #7cdb31;
     margin-inline: auto;
     height: 2px;
-    width: 35%;
+    width: min(95%, 450px);
     margin-bottom: 10px;
 }
 
@@ -46,7 +46,7 @@
 .content_container .inner_line {
     background-color: #7cdb31;
     height: 2px;
-    width: 35%;
+    width: min(95%, 350px);
     margin-bottom: 24px
 }
 .radio-list {
@@ -98,4 +98,88 @@
     height: 100%;
     object-fit: cover;
     border-radius: 12px;
+}
+
+/* --------- Gradient Banner ------- */
+.full_banner_gradient {
+    width: 100%;
+    height: max-content;
+    background: linear-gradient(90deg, #008a82 28.58%, #3a29ab 84.03%);
+    margin-bottom: 40px;
+}
+
+.full_banner_gradient p {
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4em;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    padding: 12px 10px;
+}
+
+.link_text {
+    color: #02B0E3;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4em;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: underline;
+}
+
+
+
+/* --------------- Mobile ----------- */
+@media (200px <=width <=600px) {
+    .wrapper {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .wrapper .content_container {
+        width: 100%;
+    }
+    .content_container h2 {
+        text-align: center;
+    }
+    .radio-list {
+        font-size: 14px;
+    }
+    .wrapper .img_container {
+        width: 100%;
+        display: none;
+    }
+    .full_banner_gradient p {
+        font-size: 14px;
+        padding: 25px 10px;
+    }
+    .link_text {
+        font-size: 16px;
+    }
+}
+
+
+/* ------------- Tablet --------------*/
+@media (601px <=width <=997px) {
+    .wrapper {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .wrapper .content_container {
+        width: 100%;
+    }
+    .content_container h2 {
+        text-align: center;
+    }
+    .content_container .inner_line {
+        margin-inline: auto;
+    }
+    .wrapper .img_container {
+        width: 100%;
+        display: none;
+    }
+    .full_banner_gradient p {
+        padding: 20px 10px;
+    }
 }

@@ -131,16 +131,6 @@
     padding: 12px 10px;
 }
 
-/* .btn_container {
-    width: 400px;
-    height: 54px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-bottom: 60px;
-    display: flex;
-    justify-content: space-between;
-} */
 .btn_container {
     width: 100%;
     height: max-content;
