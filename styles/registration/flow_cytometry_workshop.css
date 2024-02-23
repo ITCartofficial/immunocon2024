@@ -1,6 +1,6 @@
 .main_container {
     margin-top: 60px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .main_container .primary_heading {
@@ -90,14 +90,15 @@
 .wrapper .img_container {
     width: 28%;
     height: 470px;
+    box-shadow: 14px 20px 23px #008A8266;
     overflow: hidden;
+    border-radius: 12px;
 }
 
 .wrapper .img_container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 12px;
 }
 
 /* --------- Gradient Banner ------- */

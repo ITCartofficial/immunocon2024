@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CME</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <!-- css -->
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/registration/cme.css">
+    <!-- Script -->
+    <script src="../scripts/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header_container">
+            <!-- logo -->
+            <a href="#" class="brand_logo">
+                <img class="brand_logo-icon" src="../assets/logos/IMMUNOCON-brand-logo.png" height="auto"
+                    alt="Immunocon" />
+            </a>
+            <!-- hero title -->
+            <div class="header_hero-title">
+                <h1>Indian Immunology Society</h1>
+                <div class="hr_line"></div>
+                <p>17<sup>th&nbsp;</sup> to &nbsp;20<sup>th&nbsp;</sup> October, 2024 at J.N. Tata Auditorium, Bengaluru
+                </p>
+            </div>
+            <!-- hamburger menu -->
+            <div class="hamburger_menu">
+                <div id="hamburgerMenuBtn" class="menu_btn">
+                    <span class="menu_bar"></span>
+                </div>
+            </div>
+            <!-- other logos -->
+            <div class="img-logos">
+                <img class="alt-logos" src="../assets/img/IISC-logo.png" alt="IISC Logo" />
+                <img class="alt-logos" src="../assets/img/Indian-immunology-society.png" alt="IMS Logo" />
+                <img class="alt-logos" src="../assets/img/The Febs Journal.png" alt="The Febs Journal Logo" />
+            </div>
+            <div id="mobileNav" class="mobile_nav"></div>
+        </div>
+        <!--------- Navbar ----------->
+        <div class="nav_container">
+            <div class="nav_spacer"></div>
+            <ul class="nav_menu">
+                <li class="nav_list"><a href="/" class="nav_link">Home</a></li>
+                <li class="nav_list">
+                    <a href="#" class="nav_link">About Us</a>
+                    <i class="fa fa-angle-down dropdown_icon" aria-hidden="true"></i>
+                    <ul class="dropdown_menu">
+                        <li class="dropdown_navList">
+                            <a href="../about-us/about-iis.html" class="dropdown_navLink">About IIS</a>
+                        </li>
+                        <li class="dropdown_navList">
+                            <a href="../about-us/about-iisc.html" class="dropdown_navLink">About IISc</a>
+                        </li>
+                        <li class="dropdown_navList">
+                            <a href="../about-us/about-bengaluru.html" class="dropdown_navLink">About Bengaluru</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav_list">
+                    <a href="#" class="nav_link">Committee</a>
+                    <i class="fa fa-angle-down dropdown_icon" aria-hidden="true"></i>
+                    <ul class="dropdown_menu">
+                        <li class="dropdown_navList">
+                            <a href="../committee/local-organization-committee.html" class="dropdown_navLink">Local
+                                Organisation</a>
+                        </li>
+                        <li class="dropdown_navList">
+                            <a href="../committee/scientific-committee.html" class="dropdown_navLink">Scientific</a>
+                        </li>
+                        <li class="dropdown_navList">
+                            <a href="../committee/national-advisory-committee.html" class="dropdown_navLink">National
+                                Advisory</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav_list">
+                    <a href="#" class="nav_link">Program</a>
+                    <i class="fa fa-angle-down dropdown_icon" aria-hidden="true"></i>
+                    <ul class="dropdown_menu">
+                        <li class="dropdown_navList">
+                            <a href="../program/scientific-program.html" class="dropdown_navLink">Scientific Program</a>
+                        </li>
+                        <li class="dropdown_navList">
+                            <a href="../program/program-at-glance.html" class="dropdown_navLink">Program at the
+                                Glance</a>
+                        </li>
+                        <!-- <li class="dropdown_navList">
+                            <a href="#" class="dropdown_navLink">Quiz</a>
+                        </li> -->
+                        <li class="dropdown_navList">
+                            <a href="../program/international-speakers.html" class="dropdown_navLink">International
+                                Speakers</a>
+                        </li>
+                        <li class="dropdown_navList">
+                            <a href="../program/national-faculty.html" class="dropdown_navLink">National Faculty</a>
+                        </li>
+                        <li class="dropdown_navList">
+                            <a href="../program/social-events.html" class="dropdown_navLink">Social Events</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav_list">
+                    <a href="#" class="nav_link">Abstract Guidelines</a>
+                    <i class="fa fa-angle-down dropdown_icon" aria-hidden="true"></i>
+                    <ul class="dropdown_menu">
+                        <li class="dropdown_navList">
+                            <a href="https://forms.gle/ezKcrGxeNaZcpkdz8" class="dropdown_navLink">Upload Your Poster
+                                Abstract</a>
+                        </li>
+                        <li class="dropdown_navList">
+                            <a href="../abstract-guidelines/oral-paper-guidelines.html" class="dropdown_navLink">Oral
+                                Paper Guidelines</a>
+                        </li>
+                        <li class="dropdown_navList">
+                            <a href="../abstract-guidelines/poster-presentation.html" class="dropdown_navLink">Poster
+                                Presentation</a>
+                        </li>
+                        <li class="dropdown_navList">
+                            <a href="../abstract-guidelines/oral-presentation-schedule.html"
+                                class="dropdown_navLink">Oral Presentation Schedule</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav_list">
+                    <a href="#" class="nav_link">Registration</a>
+                    <i class="fa fa-angle-down dropdown_icon" aria-hidden="true"></i>
+                    <ul class="dropdown_menu">
+                        <li class="dropdown_navList">
+                            <a href="../registration/conference-registration.html" class="dropdown_navLink">Conference
+                                Registration</a>
+                        </li>
+                        <li class="dropdown_navList">
+                            <a href="./cme.html" class="dropdown_navLink">CME</a>
+                        </li>
+                        <li class="dropdown_navList">
+                            <a href="./flow-cytometry-workshop.html" class="dropdown_navLink">Flow Cytometry
+                                Workshop</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav_list">
+                    <a href="#" class="nav_link">Awards</a>
+                    <i class="fa fa-angle-down dropdown_icon" aria-hidden="true"></i>
+                    <ul class="dropdown_menu">
+                        <li class="dropdown_navList">
+                            <a href="../awards/travel-awards.html" class="dropdown_navLink">IMMUNOCON - 2024 Travel
+                                Busary</a>
+                        </li>
+                        <li class="dropdown_navList">
+                            <a href="../awards/immunocon-2024-awards.html" class="dropdown_navLink">IMMUNOCON - 2024
+                                Awards</a>
+                        </li>
+                        <li class="dropdown_navList">
+                            <a href="../awards/student-travel-bursaries.html" class="dropdown_navLink">Student Travel
+                                Bursaries</a>
+                        </li>
+                        <li class="dropdown_navList">
+                            <a href="../awards/young-scientist-awards.html" class="dropdown_navLink">GP. Talwar Young
+                                Scientist Award</a>
+                        </li>
+                        <li class="dropdown_navList">
+                            <a href="../awards/senior-scientist-awards.html" class="dropdown_navLink">Senior Scientist
+                                Award</a>
+                        </li>
+                        <li class="dropdown_navList">
+                            <a href="../awards/mid-career-scientist-awards.html" class="dropdown_navLink">IIS Mid-Career
+                                Scientist Award</a>
+                        </li>
+                        <li class="dropdown_navList">
+                            <a href="../awards/golden-jubilee-oration-awards.html" class="dropdown_navLink">IIS Golden
+                                Jubilee Oration Award</a>
+                        </li>
+                        <li class="dropdown_navList">
+                            <a href="../awards/special-sponsorship-awards.html" class="dropdown_navLink">IIS Special
+                                Sponsorship Awards</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav_list">
+                    <a href="../accommodation.html" class="nav_link">Accommodation</a>
+                </li>
+                <li class="nav_list">
+                    <a href="../sponsorship.html" class="nav_link">Sponsorship</a>
+                </li>
+                <li class="nav_list">
+                    <a href="../contact-us.html" class="nav_link">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- Header Section Ends -->
+    <div class="container main_container">
+        <h1 class="primary_heading">Continuing Medical Education Workshop</h1>
+        <div class="line"></div>
+        <p class="para">On 14th & 15th October 2024</p>
+        <p class="para_text description">The CME Program for 2 days with 20 talks and the tentative program is as
+            follows:</p>
+        <div class="container_wrapper">
+            <div class="content_container">
+                <div class="title_wrapper">
+                    <div class="radio"></div>
+                    <h2 class="secondary_heading">14th October 2024</h2>
+                    <div class="radio"></div>
+                </div>
+                <div class="line"></div>
+                <div class="table_container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Sl. No</th>
+                                <th>Name</th>
+                                <th>Institute</th>
+                                <th>Topic</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="sl_no">1</td>
+                                <td>Alpana Sharma</td>
+                                <td>AIIMS Delhi</td>
+                                <td>Autoimmunity</td>
+                            </tr>
+                            <tr>
+                                <td class="sl_no">2</td>
+                                <td> Uma Kanga</td>
+                                <td>AIIMS Delhi</td>
+                                <td>HLA in Diseases</td>
+                            </tr>
+                            <tr>
+                                <td class="sl_no">3</td>
+                                <td>Savita Kulkarni</td>
+                                <td>BARC Mumbai</td>
+                                <td>TB treatment & Vaccination</td>
+                            </tr>
+                            <tr>
+                                <td class="sl_no">4</td>
+                                <td>Javed Agrewala</td>
+                                <td>IIT Ropar</td>
+                                <td>Cytokines in Diseases</td>
+                            </tr>
+                            <tr>
+                                <td class="sl_no">5</td>
+                                <td>Urmila Kale</td>
+                                <td>Pune University</td>
+                                <td>Tumor Microenvironment</td>
+                            </tr>
+                            <tr>
+                                <td class="sl_no">6</td>
+                                <td>Sarman Singh</td>
+                                <td>IISER Bhopal</td>
+                                <td>TB Scenario & Containment</td>
+                            </tr>
+                            <tr>
+                                <td class="sl_no">7</td>
+                                <td>Priya Abraham</td>
+                                <td>NIV Pune/Vellore</td>
+                                <td>COVID-19 & Containment</td>
+                            </tr>
+                            <tr>
+                                <td class="sl_no">8</td>
+                                <td>Krishna Prasad</td>
+                                <td>AIIMS Delhi/Mysore</td>
+                                <td>LEPROSY the Disease and the Picture</td>
+                            </tr>
+                            <tr>
+                                <td class="sl_no">9</td>
+                                <td>Anita Desai/Reeta Mani</td>
+                                <td>NIMHANS Benguluru</td>
+                                <td>Viral Infections</td>
+                            </tr>
+                            <tr>
+                                <td class="sl_no">10</td>
+                                <td>Raghavan Varadrajan</td>
+                                <td>IISc Benguluru</td>
+                                <td>Viral Vaccines</td>
+                            </tr>
+                            <tr>
+                                <td class="sl_no">11</td>
+                                <td>Shivaprakash</td>
+                                <td>PGI Chandigarh</td>
+                                <td>Fungal Infections</td>
+                            </tr>
+                            <tr>
+                                <td class="sl_no">12</td>
+                                <td>Utpal Tatu</td>
+                                <td>IISc Benguluru</td>
+                                <td>Parasites of Medical Significance</td>
+                            </tr>
+                            <tr>
+                                <td class="sl_no">13</td>
+                                <td>Dr. Aparanji</td>
+                                <td>Andhra University</td>
+                                <td>IMMUNO Nano-Biosensors Ii Health Care</td>
+                            </tr>
+                            <tr>
+                                <td class="sl_no">14</td>
+                                <td>Dr.Urmi Bajpayee</td>
+                                <td>ADelhi University</td>
+                                <td>Phage as Medicine in New Generation</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="img_container">
+                <img src="../assets/img/registration/CME.png" alt="CME">
+            </div>
+        </div>
+
+        <div class="container_wrapper quiz_container">
+            <div class="content_container">
+                <div class="title_wrapper">
+                    <div class="radio"></div>
+                    <h2 class="secondary_heading">15th October 2024</h2>
+                    <div class="radio"></div>
+                </div>
+                <div class="line"></div>
+                <div class="table_container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Sl. No</th>
+                                <th>Name</th>
+                                <th>Institute</th>
+                                <th>Topic</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="sl_no">1</td>
+                                <td>Jyoti Kode</td>
+                                <td>ACTREC Mumbai</td>
+                                <td>Ayurveda In Cancer</td>
+                            </tr>
+                            <tr>
+                                <td class="sl_no">2</td>
+                                <td>Daisy V.</td>
+                                <td>NIMHANS</td>
+                                <td>Metagenomics in Diseases</td>
+                            </tr>
+                            <tr>
+                                <td class="sl_no">3</td>
+                                <td>Divya</td>
+                                <td>ALTEM TECH.</td>
+                                <td>IN-Silico Expt in Medicine</td>
+                            </tr>
+                            <tr>
+                                <td class="sl_no">4</td>
+                                <td>Vikas</td>
+                                <td>Patent Div.</td>
+                                <td>Patent a way forward</td>
+                            </tr>
+                            <tr>
+                                <td class="sl_no">5</td>
+                                <td>RB Pachauri</td>
+                                <td>IIT Indore</td>
+                                <td>Artificial Intelligence in Diseases</td>
+                            </tr>
+                            <tr>
+                                <td class="sl_no">6</td>
+                                <td>Sheela Godbole</td>
+                                <td>NARI Pune</td>
+                                <td>AIDS Scenario</td>
+                            </tr>
+                            <tr>
+                                <td class="sl_no">7</td>
+                                <td>Anup Anvikar</td>
+                                <td>NIMR Delhi</td>
+                                <td>Malaria Elimination & Vaccine</td>
+                            </tr>
+                            <tr>
+                                <td class="sl_no">8</td>
+                                <td> Bontha V Babu</td>
+                                <td>ICMR Jodhpur</td>
+                                <td>Filaria Elimination</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="img_container">
+                <img src="../assets/img/registration/cme-2.jpg" alt="CME">
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <div class="footer_wrapper">
+            <div class="footer_quicklinks">
+                <div class="footer_inner-container">
+                    <h3>Conference Secretariat</h3>
+                    <div class="line"></div>
+                    <div class="footer_inner-description">
+                        <p class="footer_desc-text">DpN Lab | Department of Biochemistry</p>
+                        <p class="footer_desc-text">Indian Institute of Science, Bengaluru 560012</p>
+                        <div class="links_wrapper">
+                            <span class="mail">Email: <a class="link_text" href="mailto:immunocon2024@gmail.com">
+                                    immunocon2024@gmail.com</a></span>
+                            <span>Website: <a class="link_text" href="www.immunocon51blr.com">
+                                    www.immunocon51blr.com</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class="footer_copyright">Copyright © All rights reserved | IMMUNOCON 2024</span>
+        </div>
+    </footer>
+</body>
+
+</html>

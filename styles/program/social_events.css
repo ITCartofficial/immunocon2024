@@ -60,7 +60,6 @@
 
 .yakshagana_container .line, 
 .dj_dancing_container .line {
-    /* width: 50%; */
     width: min(95%, 300px);
     margin-inline: auto;
     background-color: #7cdb31;
