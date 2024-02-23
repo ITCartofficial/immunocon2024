@@ -72,7 +72,7 @@
 }
 
 .content_container .line {
-    width: min(65%, 300px);
+    width: min(75%, 300px);
     margin-inline: auto;
     background-color: #7cdb31;
     height: 2px;
@@ -151,17 +151,60 @@ table tbody .sl_no {
     margin-top: 80px;
 }
 
+.quiz_heading_container{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.quiz_heading_container h3 {
+    text-decoration: underline;
+    padding-bottom: 10px;
+}
+
 .quiz_container .img_container {
     margin-top: 50px;
 }
 .quiz_container .img_container img {
     border: none;
 }
+/* --------- Gradient Banner ------- */
+.full_banner_gradient {
+    width: 100%;
+    height: max-content;
+    background: linear-gradient(90deg, #008a82 28.58%, #3a29ab 84.03%);
+    margin-bottom: 40px;
+}
+
+.full_banner_gradient p {
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4em;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    padding: 12px 10px;
+}
+
+.link_text {
+    color: #02B0E3;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4em;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: underline;
+}
+
 
 /* ------ Mobile -------- */
 @media (200px <=width <=600px) {
     .main_container .description {
         margin-top: 0px;
+        font-size: 14px;
+        text-align: center;
     }
     .container_wrapper {
         flex-direction: column;
@@ -180,12 +223,20 @@ table tbody .sl_no {
     .quiz_container {
         margin-top: 40px;
     }
+    .full_banner_gradient p {
+        font-size: 14px;
+        padding: 25px 10px;
+    }
+    .link_text {
+        font-size: 16px;
+    }
 }
 
 /* ----- Tablet ---- */
 @media (601px <=width <=997px) {
     .main_container .description {
         margin-top: 20px;
+        text-align: center;
     }
     .container_wrapper {
         flex-direction: column;
@@ -203,5 +254,8 @@ table tbody .sl_no {
     }
     .quiz_container {
         margin-top: 60px;
+    }
+    .full_banner_gradient p {
+        padding: 20px 10px;
     }
 }
