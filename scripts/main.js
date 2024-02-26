@@ -91,74 +91,98 @@ if (document.getElementById("mobileNav")) {
   });
 }
 
-
 // Automatic image Slider with radio button
 if (document.querySelector(".slider-container")) {
-const slideContainer = document.querySelector(".slider-container");
-const slides = slideContainer.querySelectorAll(".slide");
-const radios = document.querySelectorAll(".radio-buttons input");
+  const slideContainer = document.querySelector(".slider-container");
+  const slides = slideContainer.querySelectorAll(".slide");
+  const radios = document.querySelectorAll(".radio-buttons input");
 
-let slideIndex = 0;
+  let slideIndex = 0;
 
-const showSlide = (n) => {
-  if (n >= slides.length) {
-    slideIndex = 0;
-  }
-  if (n < 0) {
-    slideIndex = slides.length - 1;
-  }
-
-  slides.forEach((slide) => {
-    slide.style.display = "none";
-  });
-
-  radios.forEach((radio) => {
-    radio.checked = false;
-  });
-
-  slides[slideIndex].style.display = "flex";
-  radios[slideIndex].checked = true;
-};
-
-const handleRadioClick = (index) => {
-  slideIndex = index;
-  showSlide(slideIndex);
-};
-
-const handleNextSlide = () => {
-  slideIndex = (slideIndex + 1) % slides.length;
-  showSlide(slideIndex);
-};
-
-const handlePrevSlide = () => {
-  slideIndex = (slideIndex - 1 + slides.length) % slides.length;
-  showSlide(slideIndex);
-};
-
-radios.forEach((radio, index) => {
-  radio.addEventListener("click", () => {
-    handleRadioClick(index);
-  });
-});
-
-slides.forEach((slide, index) => {
-  slide.addEventListener("click", (event) => {
-    const boundingRect = slide.getBoundingClientRect();
-    const clickX = event.clientX - boundingRect.left;
-    const slideWidth = boundingRect.width;
-
-    if (clickX < slideWidth / 2) {
-      handlePrevSlide();
-    } else {
-      handleNextSlide();
+  const showSlide = (n) => {
+    if (n >= slides.length) {
+      slideIndex = 0;
     }
+    if (n < 0) {
+      slideIndex = slides.length - 1;
+    }
+
+    slides.forEach((slide) => {
+      slide.style.display = "none";
+    });
+
+    radios.forEach((radio) => {
+      radio.checked = false;
+    });
+
+    slides[slideIndex].style.display = "flex";
+    radios[slideIndex].checked = true;
+  };
+
+  const handleRadioClick = (index) => {
+    slideIndex = index;
+    showSlide(slideIndex);
+  };
+
+  const handleNextSlide = () => {
+    slideIndex = (slideIndex + 1) % slides.length;
+    showSlide(slideIndex);
+  };
+
+  const handlePrevSlide = () => {
+    slideIndex = (slideIndex - 1 + slides.length) % slides.length;
+    showSlide(slideIndex);
+  };
+
+  radios.forEach((radio, index) => {
+    radio.addEventListener("click", () => {
+      handleRadioClick(index);
+    });
   });
-});
 
-setInterval(() => {
-  handleNextSlide();
-}, 3000); // Change slide every 3 seconds
+  slides.forEach((slide, index) => {
+    slide.addEventListener("click", (event) => {
+      const boundingRect = slide.getBoundingClientRect();
+      const clickX = event.clientX - boundingRect.left;
+      const slideWidth = boundingRect.width;
 
-// Show initial slide
-showSlide(slideIndex);
+      if (clickX < slideWidth / 2) {
+        handlePrevSlide();
+      } else {
+        handleNextSlide();
+      }
+    });
+  });
+
+  setInterval(() => {
+    handleNextSlide();
+  }, 3000); // Change slide every 3 seconds
+
+  // Show initial slide
+  showSlide(slideIndex);
+}
+
+function prepareEmail() {
+  var fname = document.getElementById("fname").value.trim();
+  var lname = document.getElementById("lname").value.trim();
+  var email = document.getElementById("email").value.trim();
+  var phone = document.getElementById("phone").value.trim();
+  var subject = document.querySelector('input[name="Subject"]:checked').value;
+  var message = document.getElementById("message").value.trim();
+
+  var emailBody = "Name: " + fname + " " + lname + "\n";
+  emailBody += "Email: " + email + "\n";
+  emailBody += "Phone: " + phone + "\n";
+  emailBody += "Message: \n" + message;
+
+  var encodedSubject = encodeURIComponent(subject);
+  var encodedBody = encodeURIComponent(emailBody);
+
+  var mailtoLink =
+    "mailto:immunocon2024@gmail.com?subject=" +
+    encodedSubject +
+    "&body=" +
+    encodedBody;
+
+  window.location.href = mailtoLink;
 }

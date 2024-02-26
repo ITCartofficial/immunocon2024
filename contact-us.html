@@ -226,7 +226,7 @@
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="form_container">
-                <form action="mailto:immunocon2024@gmail.com" class="contact_form" >
+                <!-- <form action="mailto:numandotdev@gmail.com" class="contact_form" >
                     <div class="row">
                         <div class="fname field">
                             <label for="fname">First Name</label>
@@ -270,7 +270,53 @@
                         <div class="airplane_container">
                             <img src="./assets/img/airplane.png" alt="">
                         </div>
+                </form> -->
+                <form action="mailto:numandotdev@gmail.com" method="post" enctype="text/plain" class="contact_form">
+                    <div class="row">
+                        <div class="fname field">
+                            <label for="fname">First Name</label>
+                            <input type="text" required name="First Name" id="fname" placeholder="Enter your first name">
+                        </div>
+                        <div class="lname field">
+                            <label for="lname">Last Name</label>
+                            <input type="text" required name="Last Name" id="lname" placeholder="Enter your last name">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="email field">
+                            <label for="email">Email</label>
+                            <input type="email" required name="Email" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="phone field">
+                            <label for="phone">Phone Number</label>
+                            <input type="text" required name="Phone Number" id="phone" placeholder="Enter your phone number">
+                        </div>
+                    </div>
+                    <div class="subject_wrapper">
+                        <p>Select Subject?</p>
+                        <div class="radio_group_wrapper">
+                            <div class="radio_1">
+                                <input type="radio" name="Subject" id="generalInquiry" required value="General Inquiry">
+                                <label for="generalInquiry">General Inquiry</label>
+                            </div>
+                            <div class="radio_2">
+                                <input type="radio" name="Subject" id="eventRegistration" required value="Event Registration">
+                                <label for="eventRegistration">Event Registration</label>
+                            </div>
+                            <div class="radio_3">
+                                <input type="radio" name="Subject" id="technicalSupport" required value="Technical Support">
+                                <label for="technicalSupport">Technical Support</label>
+                            </div>
+                        </div>
+                        <label for="message" class="message_label">Message</label><br>
+                        <textarea name="Message" id="message" cols="85" rows="1" class="message" placeholder="Write your message"></textarea>
+                        <input type="submit" value="Send Message" class="btn_send" onclick="prepareEmail()">
+                        <div class="airplane_container">
+                            <img src="./assets/img/airplane.png" alt="">
+                        </div>
+                    </div>
                 </form>
+            
             </div>
         </div>
     </div>
