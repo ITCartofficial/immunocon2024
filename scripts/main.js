@@ -183,6 +183,6 @@ function prepareEmail() {
     encodedSubject +
     "&body=" +
     encodedBody;
-
+  
   window.location.href = mailtoLink;
 }
