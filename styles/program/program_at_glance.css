@@ -1,6 +1,7 @@
 .main_container{
     margin-top: 60px;
     margin-bottom: 60px;
+    height: calc(100vh - 625px);
 }
 
 .line {
