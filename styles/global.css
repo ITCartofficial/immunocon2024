@@ -421,9 +421,10 @@ p.footer_desc-text:first-child {
 /* Dynamic Profile Card */
 .dynamic_cards {
   width: min(100%, 200px);
+  height: 285px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .card_img {

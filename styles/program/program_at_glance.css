@@ -1,7 +1,7 @@
 .main_container{
     margin-top: 60px;
     margin-bottom: 60px;
-    height: calc(100vh - 625px);
+    height: calc(100vh - 580px);
     min-height: 200px;
 }
 
