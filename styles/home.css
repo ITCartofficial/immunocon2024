@@ -275,7 +275,7 @@
 .line {
   background-color: #7cdb31;
   height: 2px;
-  width: 35%;
+  width: min(100%, 450px);
   margin-inline: auto;
   margin-bottom: 50px;
 }
