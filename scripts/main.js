@@ -20,7 +20,11 @@ function loadCardDetails(e) {
     showDetailsBtn.classList.remove("fa-minus");
     showDetailsBtn.classList.add("fa-plus");
     profileCardDescription.style.display = "none";
-    imgContainer.style.height = "222px";
+    if(window.innerWidth < 600){
+      imgContainer.style.height = "170px";
+    } else {
+      imgContainer.style.height = "222px";
+    }
     profileImg.style.marginTop = "0px";
   }
 }
@@ -186,3 +190,5 @@ function prepareEmail() {
   
   window.location.href = mailtoLink;
 }
+
+

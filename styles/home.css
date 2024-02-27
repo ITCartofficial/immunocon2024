@@ -402,4 +402,8 @@
   .countdown_clock-label {
     font-size: 16px;
   }
+  .dynamic_cards {
+    width: min(100%, 150px);
+    height: max-content;
+  }
 }
