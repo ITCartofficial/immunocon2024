@@ -775,6 +775,7 @@ p.footer_desc-text:nth-child(2) {
   .dynamic_profile-container {
     margin-bottom: 20px !important;
     justify-content: center !important;
+    padding: 0rem 0rem !important;
   }
 
   .dynamic_cards {

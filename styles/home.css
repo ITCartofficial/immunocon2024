@@ -132,18 +132,18 @@
   height: 100%;
   background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
 }
-.logo_slider:hover .logo_slides {
+/* .logo_slider:hover .logo_slides {
   animation-play-state: paused;
-}
+} */
 
 .logo_slides {
   display: inline-block;
-  animation: 10s logo-slider infinite linear;
+  animation: 15s logo-slider linear infinite both;
   padding-block: 16px;
 }
 .slide_icons {
   width: auto;
-  height: 150px;
+  height: 110px;
   margin-right: 60px;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -405,5 +405,13 @@
   .dynamic_cards {
     width: min(100%, 150px);
     height: max-content;
+  }
+  .slide_icons {
+    height: 50px;
+    margin-right: 24px;
+    object-fit: cover;
+  }
+  .logo_slider::before, .logo_slider::after {
+    width: 10px;
   }
 }
