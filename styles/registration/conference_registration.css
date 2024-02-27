@@ -62,7 +62,7 @@ table {
     width: 80%;
     position: relative;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%); 
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 18px;
@@ -135,7 +135,7 @@ td {
 .payment_mode .line_2 {
     background-color: #7cdb31;
     height: 2px;
-    width: 30%;
+    width: min(95%, 400px);
     margin-bottom: 20px;
 }
 
@@ -209,6 +209,9 @@ td {
 
 /* --------------- Mobile ----------- */
 @media (200px <=width <=600px) {
+    .primary_heading {
+        text-align: center;
+    }
     .main_container .line {
         width: 90%;
         margin-inline: auto;
@@ -222,6 +225,19 @@ td {
     .btn_reg_container {
         display: none;
     }
+    .full_banner_gradient, .full_banner  {
+        height: max-content;
+    }
+    .payment_mode .line_2 {
+        margin-inline: auto;
+    }
+    .table_container {
+        overflow-x: scroll;
+    }
+    table {
+        width: 100% !important;
+    }
+
 }
 
 /* ------------- Tablet --------------*/

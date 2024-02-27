@@ -421,7 +421,7 @@ p.footer_desc-text:first-child {
 /* Dynamic Profile Card */
 .dynamic_cards {
   width: min(100%, 200px);
-  height: 285px;
+  height: 286px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
