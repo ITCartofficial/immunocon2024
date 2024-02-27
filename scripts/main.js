@@ -20,7 +20,7 @@ function loadCardDetails(e) {
     showDetailsBtn.classList.remove("fa-minus");
     showDetailsBtn.classList.add("fa-plus");
     profileCardDescription.style.display = "none";
-    if(window.innerWidth < 600){
+    if (window.innerWidth < 600) {
       imgContainer.style.height = "170px";
     } else {
       imgContainer.style.height = "222px";
@@ -74,24 +74,6 @@ if (document.getElementById("mobileNav")) {
       mobileNav.style.display = "block";
       isMenuOpen = true;
     }
-  });
-
-  hamburgerDropdownMenuIcons.forEach((hamburgerDropdownMenuIcon) => {
-    hamburgerDropdownMenuIcon.addEventListener("click", (e) => {
-      if (isDropDownOpen) {
-        e.target.parentNode.querySelector(".dropdown_menu").style.display =
-          "none";
-        isDropDownOpen = false;
-        e.target.classList.remove("fa-angle-down");
-        e.target.classList.add("fa-angle-up");
-      } else {
-        e.target.parentNode.querySelector(".dropdown_menu").style.display =
-          "block";
-        e.target.classList.add("fa-angle-down");
-        e.target.classList.remove("fa-angle-up");
-        isDropDownOpen = true;
-      }
-    });
   });
 }
 
@@ -187,7 +169,7 @@ function prepareEmail() {
     encodedSubject +
     "&body=" +
     encodedBody;
-  
+
   window.location.href = mailtoLink;
 }
 
