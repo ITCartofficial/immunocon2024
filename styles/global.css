@@ -425,6 +425,7 @@ p.footer_desc-text:first-child {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  overflow: hidden;
 }
 
 .card_img {
@@ -773,10 +774,13 @@ p.footer_desc-text:nth-child(2) {
   /* -------------- Dynamic Card -------- */
   .dynamic_profile-container {
     margin-bottom: 20px !important;
+    justify-content: center !important;
   }
 
   .dynamic_cards {
     width: min(100%, 150px);
+    height: 255px !important;
+    overflow: hidden;
   }
 
   .card_img {
