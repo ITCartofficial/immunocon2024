@@ -145,7 +145,7 @@ let nationalFaculty = [
   },
   {
     name: "Rupesh Srivatsa",
-    designation: "Assiocate Professor",
+    designation: "Associate Professor",
     description: "All India Institute of Medical Sciences (AIIMS), New Delhi",
     img: "../assets/img/national-faculty/Rupesh Srivatsa , AIIMS Delhi.png"
   },
@@ -277,7 +277,7 @@ let nationalFaculty = [
   },
   {
     name: "Uma Kanga",
-    designation: "Assistnat Professor",
+    designation: "Assistant Professor",
     description: "Department of Transplant Immunology and Immunogenetics, AIIMS, New Delhi",
     img: "../assets/img/national-faculty/Dr. Uma Kanga, AIIMS.png"
   },
@@ -304,49 +304,31 @@ let nationalFaculty = [
 
 
 const photoContainer = document.querySelector(".main_container #photoContainer");
-const showMoreButton = document.getElementById("showMoreButton");
-let itemsToShow = 12; 
-let totalItems = nationalFaculty.length; 
+let itemsToShow = nationalFaculty.length; // Display all items
 
 // Function to display items
 function displayItems(startIndex, endIndex) {
-    let tempCards = "";
-    for (let i = startIndex; i < endIndex; i++) {
-        const data = nationalFaculty[i];
-        tempCards += `
-            <div class="dynamic_cards">
-                <div class="card_img">
-                    <img src="${data.img}" alt="profile" width="160px" />
-                    <i class="fa-solid fa-plus show_full-icon" onclick="loadCardDetails(event)"></i>
-                </div>
-                <div class="card_identity">
-                    <h3 class="profile_name" onclick="loadCardDetails(event)">
-                        ${data.name}
-                    </h3>
-                    <span class="profile_designation">${data.designation}</span>
-                </div>
-                <span class="profile_description">${data.description}</span>
-            </div>`;
-    }
-    photoContainer.innerHTML += tempCards;
+  let tempCards = "";
+  for (let i = startIndex; i < endIndex; i++) {
+    const data = nationalFaculty[i];
+    tempCards += `
+      <div class="dynamic_cards">
+        <div class="card_img">
+          <img src="${data.img}" alt="profile" width="160px" />
+          <i class="fa-solid fa-plus show_full-icon" onclick="loadCardDetails(event)"></i>
+        </div>
+        <div class="card_identity">
+          <h3 class="profile_name" onclick="loadCardDetails(event)">
+            ${data.name}
+          </h3>
+          <span class="profile_designation">${data.designation}</span>
+        </div>
+        <span class="profile_description">${data.description}</span>
+      </div>`;
+  }
+  photoContainer.innerHTML = tempCards; 
 }
 
-// Function to show more items
-function showMore() {
-    const remainingItems = totalItems - itemsToShow;
-    const itemsToDisplay = Math.min(remainingItems, 12); 
-    displayItems(itemsToShow, itemsToShow + itemsToDisplay);
-    itemsToShow += itemsToDisplay;
-    if (itemsToShow >= totalItems) {
-        showMoreButton.style.display = "none"; 
-    }
-}
-
-// Initial display of items
+// Display all items at once
 displayItems(0, itemsToShow);
-
-// Hide the button initially if all items are displayed
-if (itemsToShow >= totalItems) {
-    showMoreButton.style.display = "none";
-}
 
