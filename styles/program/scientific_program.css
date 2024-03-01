@@ -140,6 +140,8 @@ tbody .description {
     color: #fff;
     cursor: pointer;
     text-decoration: none;
+    min-width: 170px;
+    text-align: center;
 }
 
 .download_container .btn_download:hover {
@@ -154,7 +156,12 @@ tbody .description {
         overflow: auto;
     }
     .download_container {
-        height: 90px;
+        height: max-content;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .download_container .para_text {
+        text-align: center;
     }
     .download_container .wrapper {
         width: 95%;

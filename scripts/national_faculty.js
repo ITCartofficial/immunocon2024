@@ -205,9 +205,9 @@ let nationalFaculty = [
   },
   {
     name: "Shiv Balasubramanian",
-    designation: "Co-Founder & CEO",
-    description: "Immunitas Labs",
-    img: "../assets/img/national-faculty/Shiv Balasubramanian , Immunitas Labs.png"
+    designation: "CEO",
+    description: "ImmunitasBio, Bengaluru",
+    img: "../assets/img/local-organization-committee/Dr. Shiv Baalasubramanian, Immunitas.png"
   },
   {
     name: "Siddharth Jhunjhunwala",
@@ -236,7 +236,7 @@ let nationalFaculty = [
   {
     name: "Sudha Kumari",
     designation: "Assistant Professor",
-    description: "Department of Microbiology and Cell Biology, IISc",
+    description: "Department of Microbiology & Cell Biology, IISc, Bengaluru",
     img: "../assets/img/national-faculty/Dr. Sudha Kumari, IISc.png"
   },
   {

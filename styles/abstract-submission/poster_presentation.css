@@ -238,6 +238,8 @@ table .col_pp {
     color: #fff;
     cursor: pointer;
     text-decoration: none;
+    min-width: 170px;
+    text-align: center;
 }
 
 .download_banner .btn_download:hover {
@@ -272,6 +274,14 @@ table .col_pp {
         width: 95%;
         gap: 10px;
         flex-direction: column;
+    }
+    .download_banner {
+        height: max-content;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .download_banner .para_text {
+        text-align: center;
     }
 }
 
