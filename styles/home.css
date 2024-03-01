@@ -62,7 +62,7 @@
 .slider_contents .hr_line {
   width: 60%;
   margin: 0px;
-  height: 1px;
+  height: 2px;
   margin-block: 0 10px;
 }
 .slider_contents p {
@@ -413,5 +413,12 @@
   }
   .logo_slider::before, .logo_slider::after {
     width: 10px;
+  }
+}
+
+
+@media (601px <=width <=997px) {
+  .slider_title {
+    font-size: 34px;
   }
 }
