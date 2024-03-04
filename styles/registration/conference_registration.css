@@ -208,6 +208,9 @@ td {
     table {
         width: 100% !important;
     }
+    .line_2 {
+        margin-inline: auto;
+    }
 
 }
 

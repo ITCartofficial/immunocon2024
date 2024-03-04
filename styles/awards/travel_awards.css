@@ -42,7 +42,7 @@
 }
 
 .gold_cup_1, .gold_cup_2 {
-    /* animation: hideAndShow 4s infinite;  */
+    animation: hideAndShow 4s infinite; 
 }
 
 
@@ -142,24 +142,6 @@
     display: flex;
     gap: 20px 30px;
     flex-wrap: wrap;
-}
-
-.btn_nomination {
-    text-decoration: none;
-    padding: 12px 24px;
-    background: #fff;
-    border: 2px solid #37ACEC;
-    font-family: 'Poppins', sans-serif;
-    border-radius: 2px;
-    font-weight: 500;
-    font-size: 18px;
-    color: var(--dark-color);
-    cursor: pointer;
-}
-
-.btn_nomination:hover {
-    background: #37ACEC;
-    color: #fff;
 }
 
 .btn_guidelines {

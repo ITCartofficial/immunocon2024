@@ -6,6 +6,7 @@
 .main_container .primary_heading {
     text-align: center;
 }
+
 .main_container .line {
     background-color: #7cdb31;
     margin-inline: auto;
@@ -25,13 +26,46 @@
     padding-bottom: 16px;
 }
 
+/* --------- Gradient Banner ------- */
+.full_banner_gradient {
+    width: 100%;
+    height: max-content;
+    background: linear-gradient(90deg, #008a82 28.58%, #3a29ab 84.03%);
+    margin-bottom: 40px;
+}
+
+.full_banner_gradient p {
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4em;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    padding: 12px 10px;
+}
+
+.link_text {
+    color: #02B0E3;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4em;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: underline;
+}
+
+.container_wrapper {
+    margin-bottom: 60px;
+}
+
 .wrapper {
     width: 100%;
     height: max-content;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 .wrapper .content_container {
@@ -49,9 +83,10 @@
     width: min(95%, 350px);
     margin-bottom: 24px
 }
+
 .radio-list {
-    display: flex; 
-    position: relative; 
+    display: flex;
+    position: relative;
     margin-bottom: 16px;
     color: var(--dark-color);
     font-size: 16px;
@@ -101,60 +136,51 @@
     object-fit: cover;
 }
 
-/* --------- Gradient Banner ------- */
-.full_banner_gradient {
-    width: 100%;
-    height: max-content;
-    background: linear-gradient(90deg, #008a82 28.58%, #3a29ab 84.03%);
-    margin-bottom: 40px;
-}
 
-.full_banner_gradient p {
-    text-align: center;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.4em;
-    font-family: 'Poppins', sans-serif;
-    color: #fff;
-    padding: 12px 10px;
-}
-
-.link_text {
-    color: #02B0E3;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.4em;
-    font-family: 'Poppins', sans-serif;
-    text-decoration: underline;
-}
 
 
 
 /* --------------- Mobile ----------- */
 @media (200px <=width <=600px) {
+    .main_container {
+        margin-bottom: 30px;
+    }
+
+    .main_container .para {
+        font-size: 14px;
+    }
+
     .wrapper {
         flex-direction: column;
         margin-top: 20px;
     }
+
     .wrapper .content_container {
         width: 100%;
     }
+
     .content_container h2 {
         text-align: center;
     }
+
     .radio-list {
         font-size: 14px;
     }
+
     .wrapper .img_container {
         width: 100%;
         display: none;
     }
+
+    .full_banner_gradient {
+        margin-bottom: 30px;
+    }
+
     .full_banner_gradient p {
         font-size: 14px;
         padding: 25px 10px;
     }
+
     .link_text {
         font-size: 16px;
     }
@@ -167,19 +193,24 @@
         flex-direction: column;
         margin-top: 20px;
     }
+
     .wrapper .content_container {
         width: 100%;
     }
+
     .content_container h2 {
         text-align: center;
     }
+
     .content_container .inner_line {
         margin-inline: auto;
     }
+
     .wrapper .img_container {
         width: 100%;
         display: none;
     }
+
     .full_banner_gradient p {
         padding: 20px 10px;
     }

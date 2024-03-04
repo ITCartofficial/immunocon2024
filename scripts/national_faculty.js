@@ -2,19 +2,19 @@ let nationalFaculty = [
   {
     name: "Amit Awasthi",
     designation: "Senior Professor",
-    description: "Translational Health Science and Technology Institute (THSTI)",
+    description: "Translational Health Science and Technology Institute (THSTI), Faridabad",
     img: "../assets/img/national-faculty/Amit Awasthi.png"
   },
   {
-    name: "Annapurna Vyakarnum",
+    name: "Annapurna Vyakarnam",
     designation: "Professor",
-    description: "Microbial Immunology, St. John's Bangalore",
+    description: "Microbial Immunology, St. John's Medical College, Bengaluru",
     img: "../assets/img/national-faculty/Annapurna Vyakarnam.png"
   },
   {
     name: "Apurva Sarin",
     designation: "CEO",
-    description: "DBT/Wellcome Trust India Alliance",
+    description: "DBT/Wellcome Trust India Alliance, Hyderabad",
     img: "../assets/img/national-faculty/Apurva Sarin.png"
   },
   {
@@ -24,39 +24,39 @@ let nationalFaculty = [
     img: "../assets/img/national-faculty/Arnuika Mukkhopadhyay IISER Mohali.png"
   },
   {
-    name: "Devindra Sehgal",
+    name: "Devinder Sehgal",
     designation: "Associate Professor",
-    description: "National Institute of Immunology (NII)",
+    description: "National Institute of Immunology (NII), New Delhi",
     img: "../assets/img/national-faculty/Dr. Devinder Sehgal , NII.png"
   },
   {
     name: "Dhiraj Kumar",
     designation: "Group Leader ",
-    description: "Cellular Immunology,International Centre for Genetic Engineering and Biotechnology (ICGEB)",
+    description: "Cellular Immunology,International Centre for Genetic Engineering and Biotechnology (ICGEB), New Delhi",
     img: "../assets/img/national-faculty/Dhiraj Kumar , ICGEB.png"
   },
   {
     name: "Geeta Rai",
     designation: "Associate Professor",
-    description: "Dept of Molecular and Human Genetics, Institute of Science, Banaras Hindu University",
+    description: "Dept of Molecular and Human Genetics, Institute of Science, Banaras Hindu University, Varanasi",
     img: "../assets/img/national-faculty/Dr. Geeta Rai, BHU.png"
   },
   {
     name: "Girdhari Lal",
     designation: "Scientist",
-    description: "National Centre for Cell Science (NCCS)",
+    description: "National Centre for Cell Science (NCCS), Pune",
     img: "../assets/img/national-faculty/Dr. Girdhari Lal, NCCS.png"
   },
   {
     name: "Gurushankara",
     designation: "Assistant Professor",
-    description: "Department of Zoology, Central University Kerala",
+    description: "Department of Zoology, Central University of Kerala, Kasaragod ",
     img: "../assets/img/national-faculty/Gurushankara , Central Univ Kerala.png"
   },
   {
     name: "Jyothi Prasanna",
     designation: "Professor",
-    description: "Manipal Institute of Regenerative Medicine, Bangalore",
+    description: "Manipal Institute of Regenerative Medicine, Bengaluru",
     img: "../assets/img/national-faculty/Jyothi Prasanna , Manipal Inst regenrative Med.png"
   },
   {
@@ -66,85 +66,85 @@ let nationalFaculty = [
     img: "../assets/img/national-faculty/Kalpana Luthra Aiims.png"
   },
   {
-    name: "Kesav Sannula",
+    name: "Kesavardana Sannula",
     designation: "Assistant Professor",
-    description: "Indian Institute of Science (IISc), Bangalore",
+    description: "Indian Institute of Science (IISc), Bengaluru",
     img: "../assets/img/national-faculty/Dr. Kesavardhana Sannula, IISc.png"
   },
   {
-    name: "Krishna Mohan Atmakuri",
+    name: "Krishnamohan Atmakuri",
     designation: "Associate Professor",
-    description: "Translational Health Science and Technology Institute (THSTI)",
+    description: "Translational Health Science and Technology Institute (THSTI), Faridabad",
     img: "../assets/img/national-faculty/Krishna Mohan Atmakuri , Thsti.png"
   },
   {
     name: "Kushagra Bansal",
-    designation: "Professor",
-    description: "Jawaharlal Nehru Centre for Advanced Scientific Research (JNCASR)",
+    designation: "Assistant Professor",
+    description: "Jawaharlal Nehru Centre for Advanced Scientific Research (JNCASR), Bengaluru",
     img: "../assets/img/national-faculty/Dr. Kushagra Bansal, JNCASR.png"
   },
   {
-    name: "M Madkaikar",
-    designation: "Deputy Director",
-    description: "Department of Paediatric Immunology and Leukocyte Biology, ICMR",
+    name: "Manisha Madkaikar",
+    designation: "Scientist G",
+    description: "ICMR-NIIH, Mumbai",
     img: "../assets/img/national-faculty/Manisha Madkaikar, ICMR.png"
   },
   {
     name: "M Netravathi",
     designation: "Professor",
-    description: "Department of Neurology, NIMHANS",
+    description: "Department of Neurology, NIMHANS, Bengaluru",
     img: "../assets/img/national-faculty/M Netravathi NIMHANS.png"
   },
   {
     name: "Manzoor Mir",
     designation: "Head",
-    description: "Department of Bioresources at University of Kashmir",
+    description: "Department of Bioresources at University of Kashmir, Srinagar",
     img: "../assets/img/national-faculty/Manzoor Mir , University of Kashmir.png"
   },
   {
     name: "Nagasuma Chandra",
     designation: "Professor",
-    description: "Department of Biochemistry, IISc",
+    description: "Department of Biochemistry, IISc, Bengaluru",
     img: "../assets/img/national-faculty/Nagasuma Chandra, IISc.png"
   },
   {
     name: "Nimesh Gupta",
     designation: "Principal Investigator ",
-    description: "National Institute of Immunology (NII) Delhi",
+    description: "National Institute of Immunology (NII), New Delhi",
     img: "../assets/img/national-faculty/Dr. Nimesh Gupta , NII.png"
   },
   {
     name: "Pragya Yadav",
     designation: "Scientist",
-    description: "National Institute of Virology (NIV) Pune",
+    description: "National Institute of Virology (NIV), Pune",
     img: "../assets/img/national-faculty/Pragya Yadav NIV-Pune.png"
   },
   {
     name: "Rahul Purwar",
     designation: "Associate Professor",
-    description: "Indian Institute of Technology (IIT) Bombay",
+    description: "Indian Institute of Technology (IIT) Bombay, Mumbai",
     img: "../assets/img/national-faculty/Rahul Purwar ,IIT-Bombay.png"
   },
   {
     name: "Rajiv Kumar",
     designation: "Assistant Professor ",
-    description: "Banaras Hindu University (BHU)",
+    description: "Banaras Hindu University (BHU), Varanasi",
     img: "../assets/img/national-faculty/Rajiv Kumar, BHU.png"
   },
   {
     name: "Rajeev Tyagi",
     designation: "Scientific Researcher",
-    description: "Institute of Microbial Technology (IMTECH)",
+    description: "Institute of Microbial Technology (IMTECH), Chandigarh",
     img: "../assets/img/national-faculty/Rajeev Tyagi , IMTECH.png"
   },
   {
     name: "Ritobrata Goswami",
     designation: "Associate Professor",
-    description: " Indian Institute of Technology (IIT) Kharagpur",
+    description: " Indian Institute of Technology (IIT) Kharagpur, Kharagpur",
     img: "../assets/img/national-faculty/Ritobrata Goswami , IIT-Kanpur.png"
   },
   {
-    name: "Rupesh Srivatsa",
+    name: "Rupesh Srivastava",
     designation: "Associate Professor",
     description: "All India Institute of Medical Sciences (AIIMS), New Delhi",
     img: "../assets/img/national-faculty/Rupesh Srivatsa , AIIMS Delhi.png"
@@ -152,55 +152,55 @@ let nationalFaculty = [
   {
     name: "Dr. S. Chandrashekara",
     designation: "Rheumatologist",
-    description: "Clinical Immunology & Rheumatology, ChanRe Rheumatology and Immunology Center and Research",
+    description: "Clinical Immunology & Rheumatology, ChanRe Rheumatology and Immunology Center and Research, Bengaluru",
     img: "../assets/img/national-faculty/Dr. S. Chandrashekara, ChanRe.png"
   },
   {
     name: "Sachin Kumar",
     designation: "Professor",
-    description: "Department of Biosciences & Bioengineering, IIT Guwahati",
+    description: "Department of Biosciences & Bioengineering, IIT Guwahati, Guwahati",
     img: "../assets/img/national-faculty/Sachin Kumar, IIT Guwahati.png"
   },
   {
-    name: "Sandeep Eswarappa",
+    name: "Sandeep M. Eswarappa",
     designation: "Associate Professor",
-    description: "Department of Biochemistry, IISc Bangalore", 
+    description: "Department of Biochemistry, IISc, Bengaluru", 
     img: "../assets/img/national-faculty/Dr. Sandeep M Eswarappa, IISc.png"
   },
   {
     name: "Sandhya Ganesan",
     designation: "Assistant Professor",
-    description: "Indian Institute of Science Education and Research (IISER) Trivandrum",
+    description: "Indian Institute of Science Education and Research (IISER) Trivandrum, Trivandrum",
     img: "../assets/img/national-faculty/Sandhya Ganesan , IISER Trivandrum.png"
   },
   {
     name: "Santosh Kumar",
     designation: "Senior Scientist",
-    description: "Centre for Cellular & Molecular Biology (CCMB)",
+    description: "Centre for Cellular & Molecular Biology (CCMB), Hyderabad",
     img: "../assets/img/national-faculty/Santosh Kumar, CCMB.png"
   },
   {
-    name: "Shailiza Singh",
+    name: "Shailza Singh",
     designation: "Scientist F",
-    description: "National Centre For Cell Science (NCCS)",
+    description: "National Centre For Cell Science (NCCS), Pune",
     img: "../assets/img/national-faculty/Shailiza Singh, NCCS.png"
   },
   {
-    name: "Shashank Tripati",
+    name: "Shashank Tripathi",
     designation: "Assistant Professor",
-    description: "Department of Microbiology & Cell Biology, IISc",
+    description: "Department of Microbiology & Cell Biology, IISc, Bengaluru",
     img: "../assets/img/national-faculty/Shashank Tripati iisc.png"
   },
   {
     name: "Shibnath Majumdar",
     designation: "Professor",
-    description: "South Asian University",
+    description: "South Asian University, New Delhi",
     img: "../assets/img/national-faculty/Shibnath Majumdar, South Asian University.png"
   },
   {
     name: "Shilpak Chatterjee",
     designation: "Senior Scientist",
-    description: "Indian Institute of Chemical Biology (IICB)",
+    description: "Indian Institute of Chemical Biology (IICB), Kolkata",
     img: "../assets/img/national-faculty/Shilpak Chatterjee , IICB.png"
   },
   {
@@ -212,11 +212,11 @@ let nationalFaculty = [
   {
     name: "Siddharth Jhunjhunwala",
     designation: "Associate Professor",
-    description: "Department of Bioengineering, IISc",
+    description: "Department of Bioengineering, IISc, Bengaluru",
     img: "../assets/img/national-faculty/Dr. Siddharth Jhunjhunwala, IISc.png"
   },
   {
-    name: "Siva Vallabhpurapu",
+    name: "Sivakumar Vallabhapurapu",
     designation: "Associate Professor",
     description: "Indian Institute of Science Education and Research, Tirupati",
     img: "../assets/img/national-faculty/Siva Vallabhapurapu ,  IISER Tirupati.png"
@@ -224,13 +224,13 @@ let nationalFaculty = [
   {
     name: "Soumen Basak",
     designation: "Staff Scientist-VI",
-    description: "National Institute of Immunology (NII)",
+    description: "National Institute of Immunology (NII), New Delhi",
     img: "../assets/img/national-faculty/Soumen Basak, NII.jpeg.png"
   },
   {
     name: "Subir Biswas",
     designation: "Principal Investigator",
-    description: "Advanced Centre for Treatment, Research and Education in Cancer(ACTREC)",
+    description: "Advanced Centre for Treatment, Research and Education in Cancer(ACTREC), Navi Mumbai",
     img: "../assets/img/national-faculty/Subir Biswas ACTREC.png"
   },
   {
@@ -248,55 +248,55 @@ let nationalFaculty = [
   {
     name: "Sumit Hira",
     designation: "Assistant Professor",
-    description: " Immunology, University of Burdwan",
+    description: " Immunology, University of Burdwan, Bardhaman",
     img: "../assets/img/national-faculty/Sumit Hira, Univ of Burdwan.png"
   },
   {
     name: "Susmita Jha",
     designation: "Associate Professor",
-    description: "Indian Institute of Technology (IIT) Jodhpur",
+    description: "Indian Institute of Technology (IIT) Jodhpur, Jodhpur",
     img: "../assets/img/national-faculty/Susmita Jha , IIT Jodhpur.png"
   },
   {
     name: "Taruna Madan",
     designation: "Scientist F & Head",
-    description: "Department of Innate Immunity, NIRRH",
+    description: "Head-Development Research, ICMR, New Delhi",
     img: "../assets/img/national-faculty/Dr. Taruna Madan, NIRRH.png"
   },
   {
     name: "Tina Mukherjee",
     designation: "Associate Professor",
-    description: "The Institute for Stem Cell Science and Regenerative Medicine (inStem)",
+    description: "The Institute for Stem Cell Science and Regenerative Medicine (InStem), Bengaluru",
     img: "../assets/img/national-faculty/Tina Mukherjee ,  InStem.png"
   },
   {
-    name: "Udipi Ramagopal",
+    name: "Udupi Ramagopal",
     designation: "Professor",
-    description: "Gandhi Institute of Technology and Management (GITAM)",
+    description: "Gandhi Institute of Technology and Management (GITAM), Visakhapatnam",
     img: "../assets/img/national-faculty/Udipi Ramagopal , GITAM.png"
   },
   {
     name: "Uma Kanga",
-    designation: "Assistant Professor",
+    designation: "Professor",
     description: "Department of Transplant Immunology and Immunogenetics, AIIMS, New Delhi",
     img: "../assets/img/national-faculty/Dr. Uma Kanga, AIIMS.png"
   },
   {
     name: "Vani Janakiraman",
-    designation: "Professor",
-    description: "Department Of Biotechnology, Indian Institute of technology Madras",
+    designation: "Associate Professor",
+    description: "Department Of Biotechnology, Indian Institute of Technology Madras, Chennai",
     img: "../assets/img/national-faculty/Vani Janakiraman, IIT Madras.png"
   },
   {
     name: "Veena S Patil",
     designation: "Scientist",
-    description: "National Institute of Immunology (NII)",
+    description: "National Institute of Immunology (NII), New Delhi",
     img: "../assets/img/national-faculty/Veena S Patil, NII.png"
   },
   {
     name: "Vineeta Shobha",
     designation: "Professor & Head",
-    description: "Department of Clinical Immunology and Rheumatology, St. John's Medical College",
+    description: "Department of Clinical Immunology and Rheumatology, St. John's Medical College, Bengaluru",
     img: "../assets/img/national-faculty/Vineeta Shobha , St. John's Medical College.png"
   }
 ];
