@@ -18,14 +18,14 @@
 .gold_cup_1 {
     position: absolute;
     top: -30%;
-    left: 17%;
+    left: 19%;
     height: 113px;
 }
 
 .gold_cup_2 {
     position: absolute;
     top: -30%;
-    right: 17%;
+    right: 19%;
     height: 113px;
 }
 
@@ -76,11 +76,11 @@
 }
 
 .content_container {
-    width: 70%;
+    width: 50%;
 }
 
 .img_container {
-    width: 30%;
+    width: 50%;
     height: 360px;
 }
 
@@ -109,32 +109,14 @@
     text-decoration: underline;
 }
 
-.content_container .btn_application_form {
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 24px;
-    padding: 12px 24px;
-    background: #37ACEC;
-    font-family: 'Poppins', sans-serif;
-    border-radius: 2px;
-    font-weight: 500;
-    font-size: 18px;
-    color: #fff;
-    cursor: pointer;
-    border: none;
-}
 
-.btn_application_form:hover {
-    background: linear-gradient(0deg, #02779A, #02779A),
-        linear-gradient(0deg, #02779A, #02779A);
-}
-
-/* --------- Gradient Banner ------- */
+/* --------- Gradient Note ------- */
 .full_banner_gradient {
     width: 100%;
     height: 47px;
     background: linear-gradient(90deg, #008a82 28.58%, #3a29ab 84.03%);
     margin-bottom: 40px;
+    margin-top: 60px;
 }
 
 .full_banner_gradient p {
@@ -163,7 +145,7 @@
     flex-wrap: wrap;
 }
 
-.btn_data_sheet {
+.btn_nomination {
     text-decoration: none;
     padding: 12px 24px;
     background: #fff;
@@ -174,10 +156,9 @@
     font-size: 18px;
     color: var(--dark-color);
     cursor: pointer;
-    text-align: center;
 }
 
-.btn_data_sheet:hover {
+.btn_nomination:hover {
     background: #37ACEC;
     color: #fff;
 }
@@ -193,6 +174,7 @@
     font-size: 18px;
     color: #fff;
     cursor: pointer;
+    text-align: center;
 }
 
 .btn_guidelines:hover {
@@ -205,36 +187,41 @@
 @media (200px <=width <=600px) {
     .gold_cup_1 {
         top: -5%;
-        left: -5%;
+        left: -3%;
         height: 65px;
     }
-    
+
     .gold_cup_2 {
         top: -5%;
-        right: -5%;
+        right: -3%;
         height: 65px;
     }
+
     .title_wrapper .primary_heading {
         width: 65%;
         text-align: center;
         margin: 0px auto;
     }
+
     .main_container .para {
         font-size: 14px;
     }
+
     .content_wrapper {
         flex-direction: column;
         align-items: center;
         justify-content: center;
         margin-top: 30px;
     }
+
     .content_container {
         width: 100%;
     }
+
     .img_container {
         width: 100%;
-        margin-bottom: 25px;
     }
+
     .main_container .colored_text {
         font-size: 14px;
     }
@@ -242,6 +229,7 @@
     .link_text {
         font-size: 14px;
     }
+
     .full_banner_gradient {
         height: max-content;
     }
@@ -254,7 +242,6 @@
         flex-direction: column;
     }
 }
-
 
 /* --------------- Tablet ----------- */
 @media (601px <=width <=997px) {

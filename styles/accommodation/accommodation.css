@@ -1,4 +1,4 @@
-.main_container{
+.main_container {
     margin-top: 60px;
     margin-bottom: 60px;
 }
@@ -6,12 +6,13 @@
 .main_container .primary_heading {
     text-align: center;
 }
+
 .main_container .line {
-  margin-inline: auto;
-  background-color: #7cdb31;
-  height: 2px;
-  width: min(95%, 400px);
-  margin-bottom: 20px;
+    margin-inline: auto;
+    background-color: #7cdb31;
+    height: 2px;
+    width: min(95%, 400px);
+    margin-bottom: 20px;
 }
 
 /* ------ Table ------- */
@@ -55,6 +56,8 @@ table thead {
 
 table tbody tr td {
     text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 table .sl_no {
@@ -74,16 +77,33 @@ table tbody tr td p {
     line-height: 1.3em;
 }
 
-table tbody tr td p:first-child {
+/* table tbody tr td p:first-child {
     padding-top: 5px;
 }
 
 table tbody tr td p:last-child {
     padding-bottom: 5px;
-}
+} */
 
 table tbody tr td a {
     color: #02B0E3;
+}
+
+.full_banner {
+    width: 100%;
+    height: 47px;
+    background: #8F0D0B;
+}
+
+.full_banner p {
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4em;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    padding: 12px 0px;
 }
 
 /* --------- Google Map ----- */
@@ -94,12 +114,16 @@ table tbody tr td a {
 }
 
 
-@media (200px <= width <= 997px) {
+@media (200px <=width <=997px) {
     .table_container {
         overflow-x: scroll;
     }
 
     table td {
         white-space: nowrap;
+    }
+
+    .full_banner {
+        height: max-content;
     }
 }

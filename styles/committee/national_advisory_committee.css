@@ -26,5 +26,6 @@
 @media (200px <=width <=600px) {
   .photo_container {
     gap: 30px 16px;
+    justify-content: flex-start;
   }
 }

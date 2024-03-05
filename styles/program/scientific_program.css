@@ -1,8 +1,6 @@
 .main_container{
     margin-top: 60px;
     margin-bottom: 60px;
-    height: calc(100vh - 705px);
-    min-height: 200px;
 }
 
 .main_container .primary_heading {
@@ -19,14 +17,14 @@
 .table_container {
     width: 100%;
     height: max-content;
+    margin-top: 37px;
 }
 
 table {
     width: 100%;
     font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
-    margin-top: 37px;
     margin-bottom: 10px;
 }
 
@@ -150,6 +148,34 @@ tbody .description {
     ;
 }
 
+/* --------- Tentative Schedule ------ */
+.tentative_table thead tr {
+    height: 40px;
+    background: var(--Cyan-Colour, #008a82);
+}
+.tentative_table th {
+    color: #fff;
+}
+
+.tentative_table tbody tr {
+    height: 30px;
+}
+.tentative_table .col_date {
+    width: 180px;
+}
+.tentative_table .col_time {
+    width: 180px;
+}
+.tentative_table td {
+    padding-left: 15px;
+    padding-right: 10px;
+}
+.red_text {
+    color: #8F0D0B;
+}
+.green_text {
+    color: #1db229;
+}
 
 @media (200px <=width <=600px) {
     .table_container {
@@ -167,5 +193,11 @@ tbody .description {
         width: 95%;
         gap: 10px;
         flex-direction: column;
+    }
+}
+
+@media (601px <=width <=997px) {
+    .table_container {
+        overflow: auto;
     }
 }

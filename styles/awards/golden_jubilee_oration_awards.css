@@ -71,7 +71,7 @@
     width: 100%;
     height: max-content;
     display: flex;
-    gap: 80px;
+    gap: 50px 80px;
     margin-top: 88px;
 }
 
@@ -208,33 +208,39 @@
         left: -5%;
         height: 65px;
     }
-    
+
     .gold_cup_2 {
         top: -5%;
         right: -5%;
         height: 65px;
     }
+
     .title_wrapper .primary_heading {
         width: 65%;
         text-align: center;
         margin: 0px auto;
     }
+
     .main_container .para {
         font-size: 14px;
     }
+
     .content_wrapper {
         flex-direction: column;
         align-items: center;
         justify-content: center;
         margin-top: 30px;
     }
+
     .content_container {
         width: 100%;
     }
+
     .img_container {
         width: 100%;
         margin-bottom: 25px;
     }
+
     .main_container .colored_text {
         font-size: 14px;
     }
@@ -242,6 +248,7 @@
     .link_text {
         font-size: 14px;
     }
+
     .full_banner_gradient {
         height: max-content;
     }
@@ -291,6 +298,7 @@
     .full_banner_gradient {
         height: max-content;
     }
+
     .btn_guidelines {
         padding: 14px 24px 10px 24px;
     }
