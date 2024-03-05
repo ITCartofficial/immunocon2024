@@ -31,13 +31,12 @@
     height: 50px;
 }
 
-
 .btn_register {
     padding: 12px 15px;
-    background: #02B0E3;
+    background: #02b0e3;
     border: none;
     border-radius: 2px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 16px;
     color: #fff;
@@ -47,8 +46,8 @@
 }
 
 .btn_register:hover {
-    background: linear-gradient(0deg, #02779A, #02779A),
-        linear-gradient(0deg, #02779A, #02779A);
+    background: linear-gradient(0deg, #02779a, #02779a),
+        linear-gradient(0deg, #02779a, #02779a);
 }
 
 /* ----------- Registration fee table --------- */
@@ -56,14 +55,14 @@
     width: 100%;
     height: max-content;
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
 }
 
 table {
     width: 80%;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%); 
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 18px;
     text-align: center;
@@ -76,7 +75,7 @@ table th {
 }
 
 .registration_fee_table tr:nth-child(even) {
-    background-color: #EAEAEA;
+    background-color: #eaeaea;
 }
 
 table thead tr {
@@ -97,6 +96,12 @@ td {
     white-space: nowrap;
 }
 
+table th,
+table td {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 /* -------- Delegates --------- */
 .delegates_container {
     margin-top: 65px;
@@ -111,13 +116,16 @@ td {
 }
 
 .delegates_fee_table tr:nth-child(odd) {
-    background-color: #EAEAEA;
+    background-color: #eaeaea;
+}
+.btn_mobile_register {
+    display: none;
 }
 
 .full_banner {
     width: 100%;
     height: 47px;
-    background: #8F0D0B;
+    background: #8f0d0b;
 }
 
 .full_banner p {
@@ -126,7 +134,7 @@ td {
     font-style: normal;
     font-weight: 400;
     line-height: 1.4em;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     color: #fff;
     padding: 12px 0px;
 }
@@ -137,7 +145,6 @@ td {
     height: 2px;
     width: min(95%, 400px);
 }
-
 
 /* ------------------- Radio Icon ----------- */
 .radio-list {
@@ -158,7 +165,7 @@ td {
     margin-right: 10px;
     width: 10px;
     height: 10px;
-    border: 2px solid #02B0E3;
+    border: 2px solid #02b0e3;
     border-radius: 50%;
     margin-top: 5.5px;
     animation: blinkRadio 2s infinite;
@@ -170,13 +177,14 @@ td {
     }
 
     50% {
-        background-color: #02B0E3;
+        background-color: #02b0e3;
     }
 
     100% {
         background-color: transparent;
     }
 }
+
 .refund_policy {
     margin-top: 60px;
 }
@@ -186,33 +194,46 @@ td {
     .primary_heading {
         text-align: center;
     }
+
     .main_container .line {
         width: 90%;
         margin-inline: auto;
     }
+
     .title_container .title_wrapper {
         width: 100%;
     }
+
     .title_container .title_wrapper .primary_heading {
         text-align: center;
     }
+
     .btn_reg_container {
         display: none;
     }
-    .full_banner  {
+
+    .full_banner {
         height: max-content;
     }
+
     .table_container {
+        justify-content: flex-start;
         overflow-x: scroll;
     }
+
     table {
         width: 100% !important;
     }
+
     .line_2 {
         margin-inline: auto;
     }
 
+    .btn_mobile_register {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
 }
-
-/* ------------- Tablet --------------*/
-@media (601px <=width <=997px) {}
