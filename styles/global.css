@@ -499,30 +499,18 @@ p.footer_desc-text:nth-child(2) {
   margin-bottom: 10px;
 }
 
-.links_wrapper {
-  width: 100%;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.footer_inner-description span {
+.footer_email {
   color: #fff;
   font-size: 16px;
   font-weight: 400;
-  margin-top: 0px;
+  text-align: center;
 }
-
-.footer_inner-description .mail {
-  padding-right: 40px;
-}
-
 .footer_inner-description .link_text {
   color: #fff;
   font-size: 16px;
   font-weight: 400;
   text-decoration: none;
-}
+} 
 
 .footer_inner-description .link_text:hover {
   color: #02b0e3;
@@ -724,18 +712,9 @@ p.footer_desc-text:nth-child(2) {
   p.footer_desc-text:nth-child(2) {
     font-size: 16px;
   }
-
-  .links_wrapper {
-    margin-bottom: 20px;
-    margin-left: 15px;
-  }
-
-  .footer_inner-description span {
+  .footer_email, .footer_email .link_text {
     font-size: 14px;
-  }
-
-  .footer_inner-description .link_text {
-    font-size: 14px;
+    padding-bottom: 15px;
   }
 
   .footer_copyright {
