@@ -101,7 +101,7 @@
   text-align: center;
 }
 .home_partner-slider .hr_line {
-  width: 25%;
+  width: min(100%, 400px);
   margin-block: 8px;
 }
 
@@ -111,6 +111,9 @@
   margin-inline: auto;
   white-space: nowrap;
   overflow: hidden;
+  /* for single logos */
+  display: flex;
+  justify-content: center;
 }
 .logo_slider::before {
   content: "";
@@ -138,7 +141,7 @@
 
 .logo_slides {
   display: inline-block;
-  animation: 15s logo-slider linear infinite both;
+  /* animation: 15s logo-slider linear infinite both; */
   padding-block: 16px;
 }
 .slide_icons {
@@ -407,7 +410,7 @@
     height: max-content;
   }
   .slide_icons {
-    height: 50px;
+    /* height: 50px;   */   /* Removed for single logo*/
     margin-right: 24px;
     object-fit: cover;
   }

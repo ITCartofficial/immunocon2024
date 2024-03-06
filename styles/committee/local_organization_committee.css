@@ -18,25 +18,13 @@
   margin: 48px 0px;
 }
 
-.photo_container_1 {
-  width: 100%;
-  height: max-content;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  width: 100%;
-  gap: 16px;
-  flex-wrap: wrap;
-  margin-top: 48px;
-}
-
 .photo_container_wrapper .line_2 {
   background-color: #7cdb31;
   height: 2px;
   width: 400px;
 }
 
-.photo_container_2 {
+.photo_container {
   width: 100%;
   height: max-content;
   display: flex;
@@ -49,7 +37,7 @@
 
 
 @media (200px <=width <=600px) {
-  .photo_container_2 {
+  .photo_container {
     gap: 30px 16px;
   }
 }
