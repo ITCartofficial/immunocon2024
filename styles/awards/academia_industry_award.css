@@ -1,0 +1,270 @@
+.main_container {
+    margin-top: 60px;
+    margin-bottom: 32px;
+}
+
+.main_container .line {
+    background-color: #7cdb31;
+    margin-inline: auto;
+    height: 2px;
+    width: min(65%, 450px);
+    margin-bottom: 10px;
+}
+
+.title_wrapper {
+    position: relative;
+}
+
+.gold_cup_1 {
+    position: absolute;
+    top: -30%;
+    left: 8%;
+    height: 113px;
+}
+
+.gold_cup_2 {
+    position: absolute;
+    top: -30%;
+    right: 8%;
+    height: 113px;
+}
+
+@keyframes hideAndShow {
+
+    0%,
+    25% {
+        opacity: 1;
+    }
+
+    50%,
+    75% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.gold_cup_1,
+.gold_cup_2 {
+    animation: hideAndShow 4s infinite;
+}
+
+.page_title,
+.secondary_heading {
+    text-align: center;
+}
+
+.main_container .para {
+    color: #8F0D0B;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.4em;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding-bottom: 16px;
+}
+
+.content_wrapper {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    gap: 50px 80px;
+    margin-top: 88px;
+}
+
+.content_container {
+    width: 20%;
+}
+
+.img_container {
+    width: 80%;
+    height: 360px;
+}
+
+.img_container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.main_container .colored_text {
+    color: #8F0D0B;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5em;
+    font-family: 'Poppins', sans-serif;
+}
+
+.link_text {
+    color: #02B0E3;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4em;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: underline;
+}
+
+
+/* --------- Gradient Note ------- */
+.full_banner_gradient {
+    width: 100%;
+    height: 47px;
+    background: linear-gradient(90deg, #008a82 28.58%, #3a29ab 84.03%);
+    margin-bottom: 40px;
+    margin-top: 60px;
+}
+
+.full_banner_gradient p {
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4em;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    padding: 12px 10px;
+}
+
+.btn_container {
+    width: 100%;
+    height: max-content;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn_container .wrapper {
+    display: flex;
+    gap: 20px 30px;
+    flex-wrap: wrap;
+}
+
+.btn_guidelines {
+    text-decoration: none;
+    padding: 11px 24px;
+    background: #37ACEC;
+    border-radius: 2px;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    font-weight: 500;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn_guidelines:hover {
+    background: linear-gradient(0deg, #02779A, #02779A),
+        linear-gradient(0deg, #02779A, #02779A);
+}
+
+
+/* --------------- Mobile ----------- */
+@media (200px <=width <=600px) {
+    .gold_cup_1 {
+        top: 5%;
+        left: -5%;
+        height: 65px;
+    }
+
+    .gold_cup_2 {
+        top: 5%;
+        right: -5%;
+        height: 65px;
+    }
+
+    .title_wrapper .primary_heading {
+        width: 65%;
+        text-align: center;
+        margin: 0px auto;
+    }
+
+    .main_container .para {
+        font-size: 14px;
+    }
+
+    .content_wrapper {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .content_container {
+        width: 100%;
+    }
+
+    .img_container {
+        width: 100%;
+    }
+
+    .main_container .colored_text {
+        font-size: 14px;
+    }
+
+    .link_text {
+        font-size: 14px;
+    }
+
+    .full_banner_gradient {
+        height: max-content;
+    }
+
+    .full_banner_gradient p {
+        font-size: 14px;
+    }
+
+    .btn_container .wrapper {
+        flex-direction: column;
+    }
+}
+
+/* --------------- Tablet ----------- */
+@media (601px <=width <=997px) {
+    .main_container .line {
+        width: min(50%, 450px);
+    }
+
+    .gold_cup_1 {
+        top: -5%;
+        left: 7%;
+        height: 75px;
+    }
+
+    .gold_cup_2 {
+        top: -5%;
+        right: 7%;
+        height: 75px;
+    }
+    .title_wrapper .primary_heading {
+        width: 65%;
+        text-align: center;
+        margin: 0px auto;
+    }
+    .content_wrapper {
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    .content_container {
+        width: 100%;
+    }
+
+    .img_container {
+        width: 100%;
+        display: none;
+    }
+
+    .full_banner_gradient {
+        height: max-content;
+    }
+    .btn_guidelines {
+        padding: 11px 24px;
+    }
+}

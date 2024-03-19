@@ -109,8 +109,8 @@ let nationalFaculty = [
   },
   {
     name: "Nimesh Gupta",
-    designation: "Principal Investigator ",
-    description: "National Institute of Immunology (NII), New Delhi",
+    designation: "Head",
+    description: "Vaccine Immunology Lab, NII, New Delhi",
     img: "../assets/img/national-faculty/Dr. Nimesh Gupta , NII.png"
   },
   {
@@ -150,7 +150,7 @@ let nationalFaculty = [
     img: "../assets/img/national-faculty/Rupesh Srivatsa , AIIMS Delhi.png"
   },
   {
-    name: "Dr. S. Chandrashekara",
+    name: "S. Chandrashekara",
     designation: "Rheumatologist",
     description: "Clinical Immunology & Rheumatology, ChanRe Rheumatology and Immunology Center and Research, Bengaluru",
     img: "../assets/img/national-faculty/Dr. S. Chandrashekara, ChanRe.png"
@@ -277,7 +277,7 @@ let nationalFaculty = [
   },
   {
     name: "Uma Kanga",
-    designation: "Professor",
+    designation: "Additional Professor",
     description: "Department of Transplant Immunology and Immunogenetics, AIIMS, New Delhi",
     img: "../assets/img/national-faculty/Dr. Uma Kanga, AIIMS.png"
   },

@@ -50,6 +50,10 @@
         linear-gradient(0deg, #02779a, #02779a);
 }
 
+.para_text {
+    text-align: center;
+}
+
 /* ----------- Registration fee table --------- */
 .table_container {
     width: 100%;
